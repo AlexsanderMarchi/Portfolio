@@ -1,0 +1,36 @@
+.apresentation-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #141414;
+    height: 84vh;
+}
+
+.apresentation-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.apresentation-title {
+    color: #cdcdcd;
+    font-family: fantasy;
+    font-size: 32px;
+    letter-spacing: 8px;
+}
+
+.apresentation {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.apresentation-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    border: 2px groove white;
+}
+
