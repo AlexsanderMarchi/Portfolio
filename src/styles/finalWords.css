@@ -1,25 +1,16 @@
-.apresentation-container{
+.finalWords-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: url(./background.png);
+    background-image: url(./devBackground.png);
+    background-position: center center;
     background-attachment: fixed;
-    background-size: auto;
-    /* background-position: center center;
-    background-repeat: no-repeat; */
+    background-size: cover;
     height: 84vh;
 }
 
-.content-background{
-    background: black;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.apresentation-content{
+.finalWords-content{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,19 +18,19 @@
     width: 100%;
 }
 
-.apresentation-title {
+.finalWords-title {
     color: #cdcdcd;
     font-family: fantasy;
     font-size: 32px;
     letter-spacing: 8px;
 }
 
-.apresentation {
+.finalWords {
     font-size: 20px;
     color: aliceblue;
 }
 
-.apresentation-image {
+.finalWords-image{
     width: 300px;
     height: 300px;
     border-radius: 5px;

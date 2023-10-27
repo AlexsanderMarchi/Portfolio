@@ -3,25 +3,26 @@ import { Link, Element } from 'react-scroll';
 import './home.css'
 import Header from '../components/header'
 import Projetos from '../components/projetos';
-import About from  '../components/about'
+import About from '../components/about'
 import Welcome from '../components/welcome';
-
+import FinalWords from '../components/finalWords';
 
 function Home() {
 
 
     return (
         <>
-            <Header/>
+            <Header />
 
             <div className='container'>
-               
-                <Welcome/>
 
-                <About/>
+                <Welcome />
+
+                <About />
 
                 <Projetos />
 
+                <FinalWords />
             </div>
         </>
 

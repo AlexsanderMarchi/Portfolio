@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: grey;
-    height: 100vh;
+    background-image: url(./background.png);
+    background-attachment: fixed;
+    background-size: auto;    height: 100vh;
 }
 
 .welcome-containt{

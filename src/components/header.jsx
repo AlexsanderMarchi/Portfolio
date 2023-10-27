@@ -13,10 +13,10 @@ function Header() {
                     <button className='topics'>Sobre Mim </button>
                 </Link>
                 <Link to="section2" spy={true} smooth={true} duration={500} offset={-50} delay={100}>
-                    <button className='topics'>Experiências</button>
+                    <button className='topics'>Projetos</button>
                 </Link>
                 <Link to="section3" spy={true} smooth={true} duration={500} offset={-50} delay={100}>
-                    <button className='topics'>Projetos</button>
+                    <button className='topics'>Final Words</button>
                 </Link>
             </div>
             <div className='contacts-container'>
