@@ -20,7 +20,7 @@ function Header() {
                 </Link>
             </div>
             <div className='contacts-container'>
-                <p className='contacts-title'>CONTATOS</p>
+                {/* <p className='contacts-title'>CONTATOS</p> */}
                 <a href="mailto:alexsandermarchi@gmail.com" target="_blank" rel="noopener noreferrer">
                     <AiTwotoneMail className='contacts' />
                 </a>

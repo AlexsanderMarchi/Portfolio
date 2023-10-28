@@ -18,11 +18,13 @@ function Welcome() {
                     style={{ width: '300px', height: '300px' }} />
                 <p className='welcome'>Bem vindo(a)</p>
             </div>
-            <Lottie animationData={scrollAnimation}
-                loop
-                autoplay
-                speed={5}
-                style={{ width: '200px', height: '100px' }} />
+            <Link to="section1" spy={true} smooth={true} duration={500} offset={-80} delay={100}>
+                <Lottie animationData={scrollAnimation}
+                    loop
+                    autoplay
+                    speed={5}
+                    style={{ width: '200px', height: '100px' }} />
+            </Link>
         </div>
     )
 }
