@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: url(./devBackground.png);
+    background-image: url(../assets/devBackground.png);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;

@@ -3,6 +3,7 @@ import { Link, Element } from 'react-scroll';
 import '../styles/about.css'
 import Lottie from 'lottie-react';
 import scrollAnimation from '../assets/scroll-animation.json'
+import myself from '../assets/Myself.jpg'
 
 
 
@@ -18,7 +19,7 @@ function About() {
                         Olá, Me chamo Alexsander,
                     </p>
                     <img
-                        src='./Myself.jpg' alt='Myself'
+                        src={myself} alt='Myself'
                         className='apresentation-image'
                     />
                 </div>
