@@ -18,46 +18,34 @@ function Projetos() {
             id: 1,
             imagem: petflix,
             descricao: "Criação de um Streaming voltado para Pets, sendo desenvolvido em React e Node.js na parte de API.",
-            title: "Petflix",
+            title: "Senai SA",
         },
         {
             id: 2,
-            imagem: nativeMovies,
-            descricao: "Criação de um aplicativo em React Native, para mostrar meu perfil, contento meus filmes, livros, músicas e livros.",
-            title: "Meu Perfil"
-        },
-        {
-            id: 3,
-            imagem: pigGame,
-            descricao: "Utilização de canvas no JS para desenvolvimento de uma cópia do bomberman.",
-            title: "Bomber Pig"
-        },
-        {
-            id: 4,
-            imagem: snakeGame,
-            descricao: "Utilização de JavaScript para desenvolvimento do famoso jogo da cobrinha.",
-            title: "Snake Game"
-        },
-        {
-            id: 5,
             imagem: petflix,
             descricao: "Criação de um Streaming voltado para Pets, sendo desenvolvido em React e Node.js na parte de API.",
             title: "Petflix",
         },
         {
-            id: 6,
+            id: 2,
             imagem: nativeMovies,
-            descricao: "Criação de um aplicativo em React Native, para mostrar meu perfil, contento meus filmes, livros, músicas e livros.",
-            title: "Meu Perfil"
+            descricao: "Criação de aplicativos em React Native, com desenvolvimento de perfil e rede social",
+            title: "APIs"
         },
         {
-            id: 7,
+            id: 4,
+            imagem: nativeMovies,
+            descricao: "Criação de aplicativos em React Native, com desenvolvimento de perfil e rede social",
+            title: "Expo"
+        },
+        {
+            id: 5,
             imagem: pigGame,
             descricao: "Utilização de canvas no JS para desenvolvimento de uma cópia do bomberman.",
             title: "Bomber Pig"
         },
         {
-            id: 8,
+            id: 6,
             imagem: snakeGame,
             descricao: "Utilização de JavaScript para desenvolvimento do famoso jogo da cobrinha.",
             title: "Snake Game"
@@ -90,7 +78,7 @@ function Projetos() {
                             className='projetos-image'
                             src={projeto.imagem}
                         />
-                        <div className='descricao-container'>
+                        <div className='descricao-projetos-container'>
                             <p className='projetos-subtitle'>{projeto.title}</p>
                             <h1 className='projetos'>{projeto.descricao}</h1>
                         </div>

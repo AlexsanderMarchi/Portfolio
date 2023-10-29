@@ -8,9 +8,10 @@
     justify-content: center;
 }
 
-.descricao-container{
+.descricao-projetos-container{
     display: flex;
     flex-direction: column;
+    height: 200px;
     /* flex-wrap: wrap; */
     width: 100%;
     /* justify-content: center; */
@@ -53,7 +54,6 @@
     border-radius: 10px;
     /* border: 2px groove white; */
     display: flex;
-    width: 50%;
     flex-direction: column-reverse;
     height: 100%;
     gap: 10px;
@@ -79,7 +79,7 @@
 .projetos {
     font-size: 15px;
     color: whitesmoke;
-    text-align: justify;
+    text-align: center;
     padding-right: 15px;
     /* letter-spacing: 1px; */
     font-family: math;
