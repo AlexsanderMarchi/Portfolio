@@ -19,20 +19,18 @@
 .projetos-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
     background: #2323235e;
     /* box-shadow: 0px 10px 20px rgb(209 209 209); */
     border-radius: 25px;
     margin: 0px;
     padding: 20px;
     overflow-x: scroll;
-    flex-wrap: wrap;
-    max-width: 90%;
-    max-height: 42%;
+    /* flex-wrap: wrap; */
+    width: 90%;
+    max-height: 60%;
     gap: 80px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
 
@@ -52,7 +50,8 @@
     border-radius: 5px;
     border: 2px groove white;
     display: flex;
-    width: 35%;
+    width: 50%;
+    height: 300px;
     gap: 10px;
 }
 
@@ -76,14 +75,15 @@
     font-size: 15px;
     color: whitesmoke;
     text-align: justify;
+    padding-right: 15px;
     /* letter-spacing: 1px; */
     font-family: math;
     font-weight: 100;
 }
 
 .projetos-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 5px;
     /* border: 2px groove white;*/
 }

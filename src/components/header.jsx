@@ -15,7 +15,7 @@ function Header() {
                 <Link to="section2" spy={true} smooth={true} duration={500} offset={-80} delay={100}>
                     <button className='topics'>Projetos</button>
                 </Link>
-                <Link to="section3" spy={true} smooth={true} duration={500} offset={-80} delay={100}>
+                <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
                     <button className='topics'>Final Words</button>
                 </Link>
             </div>

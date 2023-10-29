@@ -12,14 +12,22 @@
     justify-content: end;
     padding-bottom: 1%;
 }
+.descricao-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    align-content: center;
+}
 
 .content-background{
-    background: black;
+    background: #141414;;
     width: 98%;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     align-items: center;
-
+    box-shadow: 4px 4px 60px rgb(0 0 0);
 }
 .apresentation-content{
     display: flex;
@@ -38,12 +46,19 @@
 
 .apresentation {
     font-size: 20px;
-    color: aliceblue;
+    color: #f9f9f9;
+    width: 100%;
+    font-family: fantasy;
+    font-weight: 10;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-indent: 30px;
 }
 
 .apresentation-image {
-    width: 300px;
-    height: 300px;
+    width: 370px;
+    height: 370px;
+    box-shadow: 4px 8px 10px rgb(39 39 39);
     border-radius: 5px;
     border: 2px groove white;
 }

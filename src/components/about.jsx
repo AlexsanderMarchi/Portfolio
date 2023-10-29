@@ -15,10 +15,16 @@ function About() {
                     <p className='apresentation-title'>Sobre Mim</p>
                 </Element>
                 <div className='apresentation-content'>
-                    <p className='apresentation'>
-                     Olá, Me chamo Alexsander, tenho 22 anos, e atualmente estudo Técnico em Desenvolvimento de Sistemas no Senai São José.
-                        
-                    </p>
+                    <div className='descricao-container'>
+                        <p className='apresentation'>
+                            Olá, Me chamo Alexsander, tenho 22 anos, e atualmente estudo Técnico em Desenvolvimento de Sistemas no Senai São José.
+                            Atualmente ja desenvolvi em JavaScript, React, React Native, C++, Node.js e SQL.
+                        </p>
+                        <p className='apresentation'>
+                            Cada dia lutando mais para conseguir me desenvolver profissionalmente e como pessoa. Amante de cinema e guitarrista
+                            nas horas vagas.
+                        </p>
+                    </div>
                     <img
                         src={myself} alt='Myself'
                         className='apresentation-image'

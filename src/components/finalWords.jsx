@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, Element } from 'react-scroll';
 import '../styles/finalWords.css'
+import Lottie from 'lottie-react';
+import starWars from '../assets/starWars.json'
 
 
 
@@ -12,9 +14,14 @@ function FinalWords() {
             </Element>
             <div className='finalWords-content'>
                 <p className='finalWords'>
-                    Olá, Me chamo Alexsander,
+                    Obrigado por visitar meu portfólio, se quiser entrar em contato é só cliclar nos icones acima. 
+                    May the force be with you.
                 </p>
-                
+                <Lottie animationData={starWars}
+                    loop
+                    autoplay
+                    speed={5}
+                    style={{ width: '300px', height: '300px' }} /> 
             </div>
         </div>
     )
