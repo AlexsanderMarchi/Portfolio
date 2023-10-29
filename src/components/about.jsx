@@ -30,7 +30,7 @@ function About() {
                         className='apresentation-image'
                     />
                 </div>
-                <Link to="section2" spy={true} smooth={true} duration={500} offset={-80} delay={100}>
+                <Link to="section2" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
                     <Lottie animationData={scrollAnimation}
                         loop
                         autoplay
