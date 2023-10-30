@@ -8,6 +8,8 @@ import petflix from '../assets/petflix.png'
 import nativeMovies from '../assets/NativeMovies.png'
 import pigGame from '../assets/PigGame.png'
 import snakeGame from '../assets/SnakeGame.png'
+import senaiSA from '../assets/senaiSA.png'
+import postman from '../assets/postman.png'
 
 
 
@@ -16,8 +18,8 @@ function Projetos() {
     const projetosList = [
         {
             id: 1,
-            imagem: petflix,
-            descricao: "Criação de um Streaming voltado para Pets, sendo desenvolvido em React e Node.js na parte de API.",
+            imagem: senaiSA,
+            descricao: "Sistema de Ensalamento, com CRUD(modelo MVC e Facade) e quadro de horários. Foi utilizado React, Node.js e SQL",
             title: "Senai SA",
         },
         {
@@ -28,8 +30,8 @@ function Projetos() {
         },
         {
             id: 2,
-            imagem: nativeMovies,
-            descricao: "Criação de aplicativos em React Native, com desenvolvimento de perfil e rede social",
+            imagem: postman,
+            descricao: "Criação de APIs, utilizando Node.js e ElephantSQL para manipulação de dados e Postman para endpoints.",
             title: "APIs"
         },
         {
