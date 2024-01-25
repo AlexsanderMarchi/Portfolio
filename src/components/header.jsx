@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, Element } from 'react-scroll';
+import '../styles/utilities.css'
 import '../styles/header.css'
 import { AiFillInstagram, AiFillGithub, AiTwotoneMail } from "react-icons/ai";
 
@@ -7,9 +8,13 @@ import { AiFillInstagram, AiFillGithub, AiTwotoneMail } from "react-icons/ai";
 
 function Header() {
     return (
-        <header className='header-container'>
-            <div className='topics-container'>
-                <Link to="section1" spy={true} smooth={true} duration={500} offset={-80} delay={100}>
+        <header id='header-container' className='bg-dark flex-items'>
+            <div id='navbar' className='flex-items'>
+                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Final Words</a></li>
+                 
+                {/* <Link to="section1" spy={true} smooth={true} duration={500} offset={-80} delay={100}>
                     <button className='topics'>Sobre Mim </button>
                 </Link>
                 <Link to="section2" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
@@ -17,18 +22,17 @@ function Header() {
                 </Link>
                 <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
                     <button className='topics'>Final Words</button>
-                </Link>
+                </Link> */}
             </div>
-            <div className='contacts-container'>
-                {/* <p className='contacts-title'>CONTATOS</p> */}
+            <div id='contacts' className='flex-items'>
                 <a href="mailto:alexsandermarchi@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <AiTwotoneMail className='contacts' />
+                    <AiTwotoneMail className='contact' />
                 </a>
                 <a href="https://github.com/AlexsanderMarchi" target="_blank" rel="noopener noreferrer">
-                    <AiFillGithub className='contacts' />
+                    <AiFillGithub className='contact' />
                 </a>
                 <a href="https://instagram.com/alex_marchz" target="_blank" rel="noopener noreferrer">
-                    <AiFillInstagram className='contacts' />
+                    <AiFillInstagram className='contact' />
                 </a>
             </div>
         </header>

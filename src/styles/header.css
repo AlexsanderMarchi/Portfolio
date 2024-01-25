@@ -1,68 +1,37 @@
-.header-container, 
-.topics-container,
-.contacts-container{
-    display: flex;
-    flex-direction: row;
-}
-
-.header-container {
-    background: black;
-    height: 15%;
+#header-container {
+    justify-content: space-between;
+    height: 12vh;
     position: fixed;
-    z-index: 1000;
     width: 100%;
+    z-index: 10;
 }
 
-.topics-container {
+#navbar {
     justify-content: space-evenly;
     width: 70%;
-    align-items: center;
+    height: 100%;
 }
 
-.topics {
-    background-color: black;
-    color: aliceblue;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
+#navbar a{
+    font-size: 1.2rem;
 }
 
-.topics:hover {
-    color: rgb(128, 130, 131);
+#navbar a:hover,
+.contact:hover{
+    color: #a09e9e;
 }
 
-.contacts-container {
+#navbar li{
+    list-style: none;
+}
+
+#contacts {
     justify-content: space-evenly;
     width: 30%;
-    align-items: center;
+    height: 100%;
 }
 
-.contacts-title {
-    color: #5f5f5f;
-}
-
-.contacts {
-    color: white;
-    width: 40px;
-    height: 35px;
-}
-
-@media (max-width : 421px) {
-    .topics {
-        background-color: black;
-        color: aliceblue;
-        border: none;
-        font-size: 12px;
-        cursor: pointer;
-    }
-    .topics-container {
-        justify-content: space-evenly;
-        width: 60%;
-        align-items: center;
-    }
-    .contacts-container {
-        justify-content: space-evenly;
-        width: 40%;
-        align-items: center;
-    }
+.contact{
+    height: 2rem;
+    width: 2rem;
 }

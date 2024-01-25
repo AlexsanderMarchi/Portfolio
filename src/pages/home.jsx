@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, Element } from 'react-scroll';
-import './home.css'
+import '../styles/utilities.css'
 import Header from '../components/header'
 import Projetos from '../components/projetos';
 import About from '../components/about'
-import Welcome from '../components/welcome';
 import FinalWords from '../components/finalWords';
+import Showcase from '../components/showcase';
 
 function Home() {
 
@@ -16,7 +16,7 @@ function Home() {
 
             <div className='container'>
 
-                <Welcome />
+                <Showcase />
 
                 <About />
 

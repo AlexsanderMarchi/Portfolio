@@ -1,0 +1,23 @@
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-dark{
+    background: #000;
+    color: #fff;
+}
+
+/* Flex Items */
+.flex-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
