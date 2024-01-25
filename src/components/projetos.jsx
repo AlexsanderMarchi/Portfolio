@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, Element } from 'react-scroll';
+import '../styles/utilities.css'
 import '../styles/projetos.css'
 import Lottie from 'lottie-react';
 import scrollAnimation from '../assets/scroll-animation.json'
@@ -68,36 +69,34 @@ function Projetos() {
 
 
     return (
-        <div className='projetos-container'>
-            <Element name="section2">
-                <p className='projetos-title'>Projetos</p>
-            </Element>
-
-            <div className='projetos-content'>
+        <div id='projetos' className='flex-items bg-grey'>
+            <h2 className='title'>Projetos</h2>
+            <div className='projetos-list'>
                 {Object.values(projetosList).map((projeto) => (
-                    <li key={projeto.id} className='projetos-lista'>
-                        <img
-                            className='projetos-image'
-                            src={projeto.imagem}
-                        />
-                        <div className='descricao-projetos-container'>
-                            <p className='projetos-subtitle'>{projeto.title}</p>
-                            <h1 className='projetos'>{projeto.descricao}</h1>
+                    <li key={projeto.id} className='projeto flex-items bg-dark img-left'>
+                        <div className="column list-column">
+                            <img
+                                className='img-left'
+                                src={projeto.imagem}
+                            />
                         </div>
-                        
+                        <div className='column list-column'>
+                            <h2 className='projetos-subtitle'>{projeto.title}</h2>
+                            <p className='projetos'>{projeto.descricao}</p>
+                            <p>GIT HUB: <a href="https://www.google.com" target='_blank'>link</a></p>
+                        </div>
+
                     </li>
                 ))}
             </div>
-
-
-            <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
-
+            <a href="#">
                 <Lottie animationData={scrollAnimation}
                     loop
                     autoplay
                     speed={5}
                     style={{ width: '200px', height: '100px' }} />
-            </Link>
+            </a>
+
         </div>
     )
 }
@@ -105,17 +104,27 @@ function Projetos() {
 export default Projetos
 
 
-    // < div className = "scroll-buttons" >
-    //             <Lottie animationData={leftRight}
-    //                 loop
-    //                 autoplay
-    //                 speed={5}
-    //                 onClick={scrollLeft}
-    //                 style={{ width: '150px', height: '200px' }} />
-    //             <Lottie animationData={leftRight}
-    //                 loop
-    //                 autoplay
-    //                 speed={5}
-    //                 onClick={scrollRight}
-    //                 style={{ width: '150px', height: '200px', transform: 'scaleX(-1)' }} />
-    //         </div >
+//  <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
+
+//     <Lottie animationData={scrollAnimation}
+//         loop
+//         autoplay
+//         speed={5}
+//         style={{ width: '200px', height: '100px' }} />
+// </Link>
+
+
+// < div className = "scroll-buttons" >
+//             <Lottie animationData={leftRight}
+//                 loop
+//                 autoplay
+//                 speed={5}
+//                 onClick={scrollLeft}
+//                 style={{ width: '150px', height: '200px' }} />
+//             <Lottie animationData={leftRight}
+//                 loop
+//                 autoplay
+//                 speed={5}
+//                 onClick={scrollRight}
+//                 style={{ width: '150px', height: '200px', transform: 'scaleX(-1)' }} />
+//         </div >

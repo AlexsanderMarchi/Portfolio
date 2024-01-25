@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, Element } from 'react-scroll';
 import '../styles/utilities.css'
 import '../styles/header.css'
-import { AiFillInstagram, AiFillGithub, AiTwotoneMail } from "react-icons/ai";
+import { AiFillInstagram, AiFillGithub, AiTwotoneMail, AiFillLinkedin } from "react-icons/ai";
 
 
 
@@ -33,6 +33,9 @@ function Header() {
                 </a>
                 <a href="https://instagram.com/alex_marchz" target="_blank" rel="noopener noreferrer">
                     <AiFillInstagram className='contact' />
+                </a>
+                <a href="https://www.linkedin.com/in/alexsander-marchi-zunino-226332170/" target="_blank" rel="noopener noreferrer">
+                <AiFillLinkedin className='contact' />
                 </a>
             </div>
         </header>

@@ -16,12 +16,6 @@
     align-items: center;
 }
 
-#showcase-info p{
-    color: #fff;
-    font-size: 40px;
-    font-family: fantasy;
-}
-
 /* Overlay  Background*/
 #showcase * {
     z-index: 9;

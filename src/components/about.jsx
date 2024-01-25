@@ -20,27 +20,25 @@ function About() {
                     />
                 </div>
                 <div className="column">
-                    <h2>Sobred Mim</h2>
+                    <h2>Quem Sou Eu?</h2>
                     <p>
-                        Olá, Me chamo Alexsander, tenho 22 anos, e atualmente estudo Técnico em Desenvolvimento de Sistemas no Senai São José.
-                        Atualmente ja desenvolvi em JavaScript, React, React Native, C++, Node.js e SQL.
+                        Olá, Me chamo Alexsander, 23 anos. Nerd, amante de cinema e música boa, atualmente, estou me graduando na 
+                        instituição Estácio em Análise e Desenvolvimento de Sistemas.
                     </p>
                     <p>
-                        Cada dia lutando mais para conseguir me desenvolver profissionalmente e como pessoa. Amante de cinema e guitarrista
-                        nas horas vagas.
+                        Ja desenvolvi em JavaScript, React, React Native, C++, Node.js e SQL, e a cada dia aprendendo mais.
                     </p>
                 </div>
             </div>
             <div className='apresentation flex-items bg-grey right img-right'>
                 <div className="column reverse">
-                    <h2>Sobred Mim</h2>
+                    <h2>O que eu busco?</h2>
                     <p>
-                        Olá, Me chamo Alexsander, tenho 22 anos, e atualmente estudo Técnico em Desenvolvimento de Sistemas no Senai São José.
-                        Atualmente ja desenvolvi em JavaScript, React, React Native, C++, Node.js e SQL.
+                        Ja tendo concluído o curso Técnico em Desenvolvimento de Sistemas no Senai São José, estou cada dia lutando mais para 
+                        conseguir me desenvolver profissionalmente e como pessoa.
                     </p>
                     <p>
-                        Cada dia lutando mais para conseguir me desenvolver profissionalmente e como pessoa. Amante de cinema e guitarrista
-                        nas horas vagas.
+                        Eu busco constantemente desafios que me levem a aprender algo novo.
                     </p>
                 </div>
                 <div className="column">

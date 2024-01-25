@@ -17,7 +17,7 @@ function Showcase() {
                     autoplay
                     speed={5}
                     style={{ width: '300px', height: '300px' }} />
-                <p>Bem vindo(a)</p>
+                <h1 className='title'>Bem vindo(a)</h1>
             </div>
             <a href="#">
                 <Lottie animationData={scrollAnimation}
