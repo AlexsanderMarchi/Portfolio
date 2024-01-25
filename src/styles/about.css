@@ -1,0 +1,18 @@
+#about{
+    flex-direction: column;
+    background: url('../assets/devBackground.png') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.apresentation{
+    height: 50vh;
+    margin: 30px 0;
+    width: 50%;
+}
+
+.left{
+    margin-right: 50vh;
+}
+.right{
+    margin-left: 50vh;
+}

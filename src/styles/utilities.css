@@ -15,9 +15,57 @@ a {
     color: #fff;
 }
 
+.bg-secundary{
+    background: #7290aa;
+    color: #fff;
+}
+
+.bg-grey{
+    background: #333;
+    color: #fff;
+}
+
 /* Flex Items */
 .flex-items{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+.column h2{
+    padding: 0 20px 30px 20px;
+}
+
+.column p{
+    padding: 10px 20px;
+    width: 90%;
+}
+
+.reverse{
+    align-items: flex-end;
+    text-align: end;
+}
+
+.column img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-left{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.img-right{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
