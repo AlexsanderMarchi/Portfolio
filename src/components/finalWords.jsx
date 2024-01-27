@@ -8,20 +8,24 @@ import starWars from '../assets/starWars.json'
 
 function FinalWords() {
     return (
-        <div className='finalWords-container'>
+        <div id='finalWords' className='flex-items bg-dark'>
             <Element name="section3">
-                <p className='finalWords-title'>Final Words</p>
+                <p className='title'>Final Words</p>
             </Element>
-            <div className='finalWords-content'>
-                <p className='finalWords'>
-                    Obrigado por visitar meu portfólio, se quiser entrar em contato é só cliclar nos icones acima. 
-                    May the force be with you.
-                </p>
-                <Lottie animationData={starWars}
-                    loop
-                    autoplay
-                    speed={5}
-                    style={{ width: '300px', height: '300px' }} /> 
+            <div id='content' className='flex-items'>
+                <div className="column">
+                    <p>
+                        Obrigado por visitar meu portfólio, se quiser entrar em contato é só cliclar nos icones acima.
+                        May the force be with you.
+                    </p>
+                </div>
+                <div id='light-saber' className="column">
+                    <Lottie animationData={starWars}
+                        loop
+                        autoplay
+                        speed={5}
+                        style={{ width: '300px', height: '300px' }} />
+                </div>
             </div>
         </div>
     )
