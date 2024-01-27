@@ -11,18 +11,18 @@ a {
 }
 
 .bg-dark{
-    background: #000;
-    color: #fff;
+    background: var(--bg-dark);
+    color: var(--bg-title);
 }
 
 .bg-secundary{
-    background: #7290aa;
-    color: #fff;
+    background: var(--bg-secundary);
+    color: var(--bg-title);
 }
 
 .bg-grey{
-    background: #333;
-    color: #fff;
+    background: var(--bg-grey);
+    color: var(--bg-title);
 }
 
 .title{

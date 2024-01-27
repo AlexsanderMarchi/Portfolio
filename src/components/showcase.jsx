@@ -16,7 +16,7 @@ function Showcase() {
                     loop
                     autoplay
                     speed={5}
-                    style={{ width: '300px', height: '300px' }} />
+                    className='animation' />
                 <h1 className='title'>Bem vindo(a)</h1>
             </div>
             <a href="#">
