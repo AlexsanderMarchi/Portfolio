@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, Element } from 'react-scroll';
 import '../styles/finalWords.css'
 import Lottie from 'lottie-react';
-import starWars from '../assets/starWars.json'
+import starWars from '../assets/starWars.json';
 
 
 
@@ -13,13 +13,13 @@ function FinalWords() {
                 <p className='title'>Final Words</p>
             </Element>
             <div id='content' className='flex-items'>
-                <div className="column">
+                <div className="final-content column">
                     <p>
                         Obrigado por visitar meu portfólio, se quiser entrar em contato é só cliclar nos icones acima.
                         May the force be with you.
                     </p>
                 </div>
-                <div id='light-saber' className="column">
+                <div id='light-saber' className="column final-content">
                     <Lottie animationData={starWars}
                         loop
                         autoplay

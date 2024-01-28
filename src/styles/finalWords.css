@@ -1,9 +1,28 @@
 #finalWords{
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
     height: 100vh;
     width: 100%;
+    background: url('../assets/galaxy.jpg') no-repeat center center/cover;
 }
+
+/* Overlay  Background*/
+#finalWords * {
+    z-index: 9;
+}
+
+#finalWords::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+
 
 #content {
     justify-content: space-between;
@@ -17,4 +36,8 @@
 
 #light-saber{
     align-items: center;
+}
+
+.final-content{
+    justify-content: flex-start;
 }

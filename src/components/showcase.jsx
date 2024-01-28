@@ -17,22 +17,22 @@ function Showcase() {
                     autoplay
                     speed={5}
                     className='animation' />
-                <h1 className='title'>Bem vindo(a)</h1>
+                <h1 className='title'>&lt; Bem vindo(a) ao meu portfólio /&gt;</h1>
             </div>
-            <a href="#">
+            {/* <a href="#">
                 <Lottie animationData={scrollAnimation}
                     loop
                     autoplay
                     speed={5}
                     style={{ width: '200px', height: '100px' }} />
-            </a>
-            {/* <Link to="section1" spy={true} smooth={true} duration={500} offset={-80} delay={100}>
+            </a> */}
+            <Link to="section1" spy={true} smooth={true} duration={500} offset={-80} delay={100}>
                 <Lottie animationData={scrollAnimation}
                     loop
                     autoplay
                     speed={5}
                     style={{ width: '200px', height: '100px' }} />
-            </Link> */}
+            </Link>
         </div>
     )
 }

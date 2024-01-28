@@ -3,7 +3,7 @@ import { Link, Element } from 'react-scroll';
 import '../styles/utilities.css'
 import '../styles/projetos.css'
 import Lottie from 'lottie-react';
-import scrollAnimation from '../assets/scroll-animation.json'
+import scrollAnimation from '../assets/scroll-white.json'
 import leftRight from '../assets/leftRight.json'
 import petflix from '../assets/petflix.png'
 import nativeMovies from '../assets/NativeMovies.png'
@@ -22,36 +22,42 @@ function Projetos() {
             imagem: senaiSA,
             descricao: "Sistema de Ensalamento, com CRUD(modelo MVC e Facade) e quadro de horários. Foi utilizado React, Node.js e SQL",
             title: "Senai SA",
+            github: "https://github.com/PedroHGaspar/Senai-S-A"
         },
         {
             id: 2,
             imagem: petflix,
             descricao: "Criação de um Streaming voltado para Pets, sendo desenvolvido em React e Node.js na parte de API.",
             title: "Petflix",
+            github: "https://github.com/AlexsanderMarchi/petFlix"
         },
         {
             id: 2,
             imagem: postman,
             descricao: "Criação de APIs, utilizando Node.js e ElephantSQL para manipulação de dados e Postman para endpoints.",
-            title: "APIs"
+            title: "APIs",
+            github: "https://github.com/AlexsanderMarchi/BackEnd-Node.js"
         },
         {
             id: 4,
             imagem: nativeMovies,
             descricao: "Criação de aplicativos em React Native, com desenvolvimento de perfil e rede social",
-            title: "Expo"
+            title: "Expo",
+            github: "https://github.com/AlexsanderMarchi/React-Native"
         },
         {
             id: 5,
             imagem: pigGame,
             descricao: "Utilização de canvas no JS para desenvolvimento de uma cópia do bomberman.",
-            title: "Bomber Pig"
+            title: "Bomber Pig",
+            github: "https://github.com/AlexRuan00/pig-bomb"
         },
         {
             id: 6,
             imagem: snakeGame,
             descricao: "Utilização de JavaScript para desenvolvimento do famoso jogo da cobrinha.",
-            title: "Snake Game"
+            title: "Snake Game",
+            github: "https://github.com/AlexsanderMarchi/JogoDaCobrinha"
         }
     ]
 
@@ -70,7 +76,9 @@ function Projetos() {
 
     return (
         <div id='projetos' className='flex-items bg-grey'>
-            <h2 className='title'>Projetos</h2>
+            <Element name="section2">
+                <h2 className='title'>Projetos</h2>
+            </Element>
             <div className='projetos-list'>
                 {Object.values(projetosList).map((projeto) => (
                     <li key={projeto.id} className='projeto flex-items bg-dark img-left'>
@@ -80,22 +88,30 @@ function Projetos() {
                                 src={projeto.imagem}
                             />
                         </div>
-                        <div className='column list-column'>
+                        <div className='column list-column list-info'>
                             <h2 className='projetos-subtitle'>{projeto.title}</h2>
                             <p className='projetos'>{projeto.descricao}</p>
-                            <p>GIT HUB: <a href="https://www.google.com" target='_blank'>link</a></p>
+                            <p>GIT HUB: <br /><a href={projeto.github} target='_blank'>{projeto.github}</a></p>
                         </div>
 
                     </li>
                 ))}
             </div>
-            <a href="#">
+            {/* <a href="#">
                 <Lottie animationData={scrollAnimation}
                     loop
                     autoplay
                     speed={5}
                     style={{ width: '200px', height: '100px' }} />
-            </a>
+            </a> */}
+            <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
+
+                <Lottie animationData={scrollAnimation}
+                    loop
+                    autoplay
+                    speed={5}
+                    style={{ width: '200px', height: '100px' }} />
+            </Link>
 
         </div>
     )
@@ -104,14 +120,6 @@ function Projetos() {
 export default Projetos
 
 
-//  <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
-
-//     <Lottie animationData={scrollAnimation}
-//         loop
-//         autoplay
-//         speed={5}
-//         style={{ width: '200px', height: '100px' }} />
-// </Link>
 
 
 // < div className = "scroll-buttons" >
