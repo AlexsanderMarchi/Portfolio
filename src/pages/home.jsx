@@ -4,7 +4,7 @@ import '../styles/utilities.css'
 import Header from '../components/header'
 import Projetos from '../components/projetos';
 import About from '../components/about'
-import FinalWords from '../components/finalWords';
+import Experience from '../components/experience';
 import Showcase from '../components/showcase';
 
 function Home() {
@@ -20,9 +20,9 @@ function Home() {
 
                 <About />
 
-                <Projetos />
+                <Experience />
 
-                <FinalWords />
+                <Projetos />
             </div>
         </>
 

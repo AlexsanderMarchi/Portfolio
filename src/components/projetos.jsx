@@ -20,35 +20,37 @@ function Projetos() {
         {
             id: 1,
             imagem: senaiSA,
-            descricao: "Sistema de Ensalamento, com CRUD(modelo MVC e Facade) e quadro de horários. Foi utilizado React, Node.js e SQL",
+            descricao: "Sistema de Ensalamento, com CRUD(modelo MVC e Facade) e quadro de horários. Foi utilizado React, Node.js e SQL. Foi desenvolvido com colegas e apresentado em sala de aula",
             title: "Senai SA",
-            github: "https://github.com/PedroHGaspar/Senai-S-A"
+            github: "https://github.com/PedroHGaspar/Senai-S-A",
+            website: "https://senai-sa.vercel.app/"
         },
         {
             id: 2,
             imagem: petflix,
-            descricao: "Criação de um Streaming voltado para Pets, sendo desenvolvido em React e Node.js na parte de API.",
+            descricao: "Criação de um Streaming voltado para Pets, sendo desenvolvido, em dupla, usando Firebase para armazenamento de videos, React e Node.js na parte de API.",
             title: "Petflix",
-            github: "https://github.com/AlexsanderMarchi/petFlix"
+            github: "https://github.com/AlexsanderMarchi/petFlix",
+            website: "https://pet-flix-henna.vercel.app/"
         },
         {
             id: 2,
             imagem: postman,
-            descricao: "Criação de APIs, utilizando Node.js e ElephantSQL para manipulação de dados e Postman para endpoints.",
+            descricao: "Criação de APIs em sala de aula, utilizando Node.js e ElephantSQL para manipulação de dados e Postman para endpoints.",
             title: "APIs",
             github: "https://github.com/AlexsanderMarchi/BackEnd-Node.js"
         },
         {
             id: 4,
             imagem: nativeMovies,
-            descricao: "Criação de aplicativos em React Native, com desenvolvimento de perfil e rede social",
+            descricao: "Criação de aplicativos em React Native, com desenvolvimento de perfil e rede social utilizando Firebase para troca de mensagem em tempo real",
             title: "Expo",
             github: "https://github.com/AlexsanderMarchi/React-Native"
         },
         {
             id: 5,
             imagem: pigGame,
-            descricao: "Utilização de canvas no JS para desenvolvimento de uma cópia do bomberman.",
+            descricao: "Utilização de canvas no JS para desenvolvimento de uma cópia do bomberman, contendo IA para os inimigos. Foi desenvolvimento e apresentado em grupo, contendo 4 fases e um Boss final",
             title: "Bomber Pig",
             github: "https://github.com/AlexRuan00/pig-bomb"
         },
@@ -91,6 +93,14 @@ function Projetos() {
                         <div className='column list-column list-info'>
                             <h2 className='projetos-subtitle'>{projeto.title}</h2>
                             <p className='projetos'>{projeto.descricao}</p>
+                            {projeto.website && (
+                                <p>
+                                    Website: <br />
+                                    <a href={projeto.website} target='_blank' rel='noopener noreferrer'>
+                                        {projeto.website}
+                                    </a>
+                                </p>
+                            )}
                             <p>GIT HUB: <br /><a href={projeto.github} target='_blank'>{projeto.github}</a></p>
                         </div>
 
