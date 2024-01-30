@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, Element } from 'react-scroll';
+import '../styles/utilities.css'
 import '../styles/experience.css';
-import senaiSA from '../assets/senaiSA.png';
-import petflix from '../assets/petflix.png';
+import senai from '../assets/senaiLogo.jpg';
+import estacio from '../assets/estacioLogo.png';
 import Lottie from 'lottie-react';
 import scrollAnimation from '../assets/scroll-white.json';
 // import starWars from '../assets/starWars.json';
@@ -14,14 +15,18 @@ function Experience() {
     const experienceList = [
         {
             id: 1,
-            imagem: senaiSA,
+            imagem: senai,
+            data: "maio de 2021 - dezembro de 2023",
+            competencias: "JavaScript - HTML5, CSS3 - React - React Native - C++ - Node.js - SQL - Modelagem de Sistemas - Cypress.io",
             descricao: "Sistema de Ensalamento, com CRUD(modelo MVC e Facade) e quadro de horários. Foi utilizado React, Node.js e SQL",
             title: "Senai SA",
             github: "https://github.com/PedroHGaspar/Senai-S-A"
         },
         {
             id: 2,
-            imagem: petflix,
+            imagem: estacio,
+            data: "maio de 2021 - dezembro de 2023",
+            competencias: "JavaScript - HTML5, CSS3 - React - React Native - C++ - Node.js - SQL - Modelagem de Sistemas - Cypress.io",
             descricao: "Criação de um Streaming voltado para Pets, sendo desenvolvido em React e Node.js na parte de API.",
             title: "Petflix",
             github: "https://github.com/AlexsanderMarchi/petFlix"
@@ -30,17 +35,22 @@ function Experience() {
 
     return (
         <div id='experience' className='flex-items bg-dark'>
-            <Element name="section3">
+            <Element name="section2">
                 {/* <p className='title'>Final Words</p> */}
             </Element>
             <div className='projetos-list'>
                 {Object.values(experienceList).map((experience) => (
                     <li key={experience.id} className='projeto flex-items bg-dark img-left'>
-                        <div className="column list-column">
-                            <img
-                                className='img-left'
-                                src={experience.imagem}
-                            />
+                        <div className="column list-column list-info">
+                            <div>
+                                <img
+                                    className='img-left img-experience'
+                                    src={experience.imagem}
+                                />
+                                <p>{experience.data}</p>
+
+                            </div>
+                            <p className='projetos'> Competências: {experience.competencias}</p>
                         </div>
                         <div className='column list-column list-info'>
                             <h2 className='projetos-subtitle'>{experience.title}</h2>

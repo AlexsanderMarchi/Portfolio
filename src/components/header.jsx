@@ -18,10 +18,10 @@ function Header() {
                     <a href="#">Sobre Mim</a>
                 </Link>
                 <Link to="section2" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
-                    <a href="#">Projetos</a>
+                    <a href="#">Experiências</a>
                 </Link>
                 <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
-                    <a href="#">Final Words</a>
+                    <a href="#">Projetos</a>
                 </Link>
             </div>
             <div id='contacts' className='flex-items'>

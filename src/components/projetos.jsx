@@ -50,16 +50,18 @@ function Projetos() {
         {
             id: 5,
             imagem: pigGame,
-            descricao: "Utilização de canvas no JS para desenvolvimento de uma cópia do bomberman, contendo IA para os inimigos. Foi desenvolvimento e apresentado em grupo, contendo 4 fases e um Boss final",
+            descricao: "Utilização de canvas no JS para desenvolvimento de uma cópia do bomberman, contendo IA para os inimigos. Foi desenvolvimento e apresentado em grupo, contendo 4 fases e um Boss final. Clique Abaixo para testar o jogo",
             title: "Bomber Pig",
-            github: "https://github.com/AlexRuan00/pig-bomb"
+            github: "https://github.com/AlexRuan00/pig-bomb",
+            website: "https://resilient-cheesecake-4e0caa.netlify.app/"
         },
         {
             id: 6,
             imagem: snakeGame,
-            descricao: "Utilização de JavaScript para desenvolvimento do famoso jogo da cobrinha.",
+            descricao: "Utilização de JavaScript para desenvolvimento do famoso jogo da cobrinha. Clique Abaixo para testar o jogo",
             title: "Snake Game",
-            github: "https://github.com/AlexsanderMarchi/JogoDaCobrinha"
+            github: "https://github.com/AlexsanderMarchi/JogoDaCobrinha",
+            website: "https://65b71a5a5b9715dcea809d2e--legendary-medovik-07e8d5.netlify.app/"
         }
     ]
 
@@ -78,8 +80,8 @@ function Projetos() {
 
     return (
         <div id='projetos' className='flex-items bg-grey'>
-            <Element name="section2">
-                <h2 className='title'>Projetos</h2>
+            <Element name="section3">
+                {/* <h2 className='title'>Projetos</h2> */}
             </Element>
             <div className='projetos-list'>
                 {Object.values(projetosList).map((projeto) => (
@@ -114,14 +116,14 @@ function Projetos() {
                     speed={5}
                     style={{ width: '200px', height: '100px' }} />
             </a> */}
-            <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
+            {/* <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
 
                 <Lottie animationData={scrollAnimation}
                     loop
                     autoplay
                     speed={5}
                     style={{ width: '200px', height: '100px' }} />
-            </Link>
+            </Link> */}
 
         </div>
     )

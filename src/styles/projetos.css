@@ -14,7 +14,7 @@
     display: flex;
     justify-content: flex-start;
     overflow-x: scroll;
-    width: 100%;
+    width: 90%;
     overflow-y: hidden;
 }
 
