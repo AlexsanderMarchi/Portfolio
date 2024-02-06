@@ -2,10 +2,12 @@
 
 :root {
   --bg-dark: #000;
-  --bg-title: #fff;
+  --bg-white: #fff;
   --bg-secundary: #7290aa;
   --bg-grey: #333;
+  --bg-light: #f4f4f4;
   --main-color: #ffbc00;
+  --max-width: 1100px;
 }
 
 * {
@@ -34,5 +36,4 @@ h5,
 h6 {
   color: #fff;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
 }
