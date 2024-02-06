@@ -1,0 +1,18 @@
+#main-footer {
+  height: 10vh;
+  background: var(--bg-grey);
+}
+
+.footer-content,
+.social {
+  flex-direction: row;
+}
+
+.footer-content {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  gap: 1rem;
+}

@@ -1,38 +1,28 @@
-import { useState, useEffect, useRef } from 'react'
-import { Link, Element } from 'react-scroll';
-import '../styles/utilities.css'
-import Header from '../components/header'
-import Projetos from '../components/projetos';
-import About from '../components/about'
-import Experience from '../components/experience';
-import Showcase from '../components/showcase';
+import { useState, useEffect, useRef } from "react";
+import { Link, Element } from "react-scroll";
+import "../styles/utilities.css";
+import Header from "../components/header";
+import Projetos from "../components/projetos";
+import About from "../components/about";
+import Experience from "../components/experience";
+import Footer from "../components/footer";
 
 function Home() {
+  return (
+    <>
+      <Header />
 
+      {/* <About /> */}
 
-    return (
-        <>
-            <Header />
+      {/* <Experience />
 
-            <div className='container'>
-
-                <Showcase />
-
-                <About />
-
-                <Experience />
-
-                <Projetos />
-            </div>
-        </>
-
-    )
+<Projetos /> */}
+      <Footer />
+    </>
+  );
 }
 
-export default Home
-
-
-
+export default Home;
 
 /* <div className='experiencias-container'>
                     <Element name="section2">
