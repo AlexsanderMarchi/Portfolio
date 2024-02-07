@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import { Link, Element } from "react-scroll";
 import "../styles/utilities.css";
 import Header from "../components/header";
+import Experience from "../components/experience";
 import Projetos from "../components/projetos";
 import About from "../components/about";
-import Experience from "../components/experience";
 import Footer from "../components/footer";
 
 function Home() {
@@ -14,9 +14,10 @@ function Home() {
 
       <About />
 
-      {/* <Experience />
+      <Experience />
 
-<Projetos /> */}
+      {/* <Projetos /> */}
+
       <Footer />
     </>
   );

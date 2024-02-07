@@ -35,32 +35,20 @@ function Experience() {
   ];
 
   return (
-    <div id="experience" className="flex-items bg-dark">
-      <Element name="section2">
-        {/* <p className='title'>Final Words</p> */}
-      </Element>
-      <div className="projetos-list">
+    <div id="experience" className="flex-items">
+      <div className="container">
         {Object.values(experienceList).map((experience) => (
-          <li
-            key={experience.id}
-            className="projeto flex-items bg-dark img-left"
-          >
-            <div className="column list-column list-info">
+          <li key={experience.id}>
+            <div>
               <div>
-                <img
-                  className="img-left img-experience"
-                  src={experience.imagem}
-                />
+                <img src={experience.imagem} />
                 <p>{experience.data}</p>
               </div>
-              <p className="projetos">
-                {" "}
-                Competências: {experience.competencias}
-              </p>
+              <p> Competências: {experience.competencias}</p>
             </div>
-            <div className="column list-column list-info">
-              <h2 className="projetos-subtitle">{experience.title}</h2>
-              <p className="projetos">{experience.descricao}</p>
+            <div>
+              <h2>{experience.title}</h2>
+              <p>{experience.descricao}</p>
               <p>
                 GIT HUB: <br />
                 <a href={experience.github} target="_blank">
@@ -106,3 +94,7 @@ export default Experience;
 //             style={{ width: '300px', height: '300px' }} />
 //     </div>
 // </div>
+
+// <Element name="section2">
+//   {/* <p className='title'>Final Words</p> */}
+// </Element>
