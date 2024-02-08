@@ -1,0 +1,12 @@
+.projetos-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.projetos-list img {
+  width: 100px;
+}
+
+.projeto {
+  width: 50vh;
+}

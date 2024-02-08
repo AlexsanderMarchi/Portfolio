@@ -1,6 +1,7 @@
 #about {
   background: var(--bg-white);
   /* height: 100vh; */
+  border-bottom: 1px solid var(--main-color);
 }
 #about p,
 #about h1 {

@@ -16,7 +16,7 @@ function Home() {
 
       <Experience />
 
-      {/* <Projetos /> */}
+      <Projetos />
 
       <Footer />
     </>

@@ -18,6 +18,12 @@
   width: 6rem;
   margin: 0.5rem 0 2rem 0;
 }
+.underline-subtitle {
+  background-color: var(--main-color);
+  height: 1px;
+  width: 2rem;
+  margin: 0.5rem 0 1rem 0;
+}
 
 .py-1 {
   padding: 1rem 0;

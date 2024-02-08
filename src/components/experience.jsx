@@ -35,45 +35,35 @@ function Experience() {
   ];
 
   return (
-    <div id="experience" className="flex-items">
-      <div className="container">
-        {Object.values(experienceList).map((experience) => (
-          <li key={experience.id}>
-            <div>
-              <div>
-                <img src={experience.imagem} />
+    <div id="experience" className="py-3">
+      <div className="container flex-items">
+        <h1>Experiências</h1>
+        <div className="underline"></div>
+        <ul>
+          {Object.values(experienceList).map((experience) => (
+            <li key={experience.id}>
+              <div className="experience-container">
+                <div className="flex-items">
+                  <img src={experience.imagem} />
+                  <div id="info" className="flex-items">
+                    <h2>{experience.title}</h2>
+                    <div className="underline-subtitle"></div>
+                    <p>{experience.descricao}</p>
+                  </div>
+                </div>
                 <p>{experience.data}</p>
+                <p> Competências: {experience.competencias}</p>
+                <p>
+                  GIT HUB: <br />
+                  <a href={experience.github} target="_blank">
+                    {experience.github}
+                  </a>
+                </p>
               </div>
-              <p> Competências: {experience.competencias}</p>
-            </div>
-            <div>
-              <h2>{experience.title}</h2>
-              <p>{experience.descricao}</p>
-              <p>
-                GIT HUB: <br />
-                <a href={experience.github} target="_blank">
-                  {experience.github}
-                </a>
-              </p>
-            </div>
-          </li>
-        ))}
+            </li>
+          ))}
+        </ul>
       </div>
-      {/* <a href="#">
-                <Lottie animationData={scrollAnimation}
-                    loop
-                    autoplay
-                    speed={5}
-                    style={{ width: '200px', height: '100px' }} />
-            </a> */}
-      {/* <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
-
-                <Lottie animationData={scrollAnimation}
-                    loop
-                    autoplay
-                    speed={5}
-                    style={{ width: '200px', height: '100px' }} />
-            </Link> */}
     </div>
   );
 }
@@ -98,3 +88,19 @@ export default Experience;
 // <Element name="section2">
 //   {/* <p className='title'>Final Words</p> */}
 // </Element>
+
+// {/* <a href="#">
+//           <Lottie animationData={scrollAnimation}
+//               loop
+//               autoplay
+//               speed={5}
+//               style={{ width: '200px', height: '100px' }} />
+//       </a> */}
+// {/* <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
+
+//           <Lottie animationData={scrollAnimation}
+//               loop
+//               autoplay
+//               speed={5}
+//               style={{ width: '200px', height: '100px' }} />
+//       </Link> */}
