@@ -18,9 +18,9 @@ function Header() {
           <Link to={`/`}>
             <a href="#">Home</a>
           </Link>
-          <Link to={`/Experiences`}>
+          {/* <Link to={`/Experiences`}>
             <a href="#">Experience</a>
-          </Link>
+          </Link> */}
 
           {/* <a href="#">Projetos</a> */}
         </div>

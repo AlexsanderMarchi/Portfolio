@@ -69,63 +69,55 @@ function Projetos() {
     },
   ];
 
-  // Funções para rolar a lista de projetos para a esquerda e direita
-  // const scrollLeft = () => {
-  //     const projetosContainer = document.querySelector('.projetos-content');
-  //     projetosContainer.scrollLeft -= 200; // Você pode ajustar o valor de acordo com a quantidade que deseja rolar
-  // };
-
-  // const scrollRight = () => {
-  //     const projetosContainer = document.querySelector('.projetos-content');
-  //     projetosContainer.scrollLeft += 200; // Você pode ajustar o valor de acordo com a quantidade que deseja rolar
-  // };
-
   return (
-    <div id="projetos" className="flex-items bg-grey">
-      <Element name="section3">
-        {/* <h2 className='title'>Projetos</h2> */}
-      </Element>
-      <div className="projetos-list container">
-        {Object.values(projetosList).map((projeto) => (
-          <li key={projeto.id} className="projeto flex-items bg-dark img-left">
-            <div className="column list-column">
-              <img className="img-left" src={projeto.imagem} />
-            </div>
-            <div className="column list-column list-info">
-              <h2 className="projetos-subtitle">{projeto.title}</h2>
-              <p className="projetos">{projeto.descricao}</p>
-              {projeto.website && (
-                <p>
-                  Website: <br />
-                  <a
-                    href={projeto.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {projeto.website}
-                  </a>
-                </p>
-              )}
-              <p>
-                GIT HUB: <br />
-                <a href={projeto.github} target="_blank">
-                  {projeto.github}
-                </a>
-              </p>
-            </div>
-          </li>
-        ))}
+    <div id="projetos" className="flex-items py-3">
+      <div className=" flex-items">
+        <h1>Projetos</h1>
+        <div className="underline"></div>
+        <ul>
+          {Object.values(projetosList).map((projeto) => (
+            <li key={projeto.id}>
+              <div className="projeto">
+                <img src={projeto.imagem} />
+                {/* <div className="projeto-img">
+                </div> */}
+                <div className="projeto-text">
+                  <h2>{projeto.title}</h2>
+                  <p>{projeto.descricao}</p>
+                  {projeto.website && (
+                    <p>
+                      Website: <br />
+                      <a
+                        href={projeto.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {projeto.website}
+                      </a>
+                    </p>
+                  )}
+                  <p>
+                    GIT HUB: <br />
+                    <a href={projeto.github} target="_blank">
+                      {projeto.github}
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
       {/* <a href="#">
                 <Lottie animationData={scrollAnimation}
-                    loop
+                loop
                     autoplay
                     speed={5}
                     style={{ width: '200px', height: '100px' }} />
-            </a> */}
+                  </a> */}
       {/* <Link to="section3" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
 
-                <Lottie animationData={scrollAnimation}
+<Lottie animationData={scrollAnimation}
                     loop
                     autoplay
                     speed={5}
@@ -151,3 +143,18 @@ export default Projetos;
 //                 onClick={scrollRight}
 //                 style={{ width: '150px', height: '200px', transform: 'scaleX(-1)' }} />
 //         </div >
+
+// <Element name="section3">
+//   {/* <h2 className='title'>Projetos</h2> */}
+// </Element>
+
+// Funções para rolar a lista de projetos para a esquerda e direita
+// const scrollLeft = () => {
+//     const projetosContainer = document.querySelector('.projetos-content');
+//     projetosContainer.scrollLeft -= 200; // Você pode ajustar o valor de acordo com a quantidade que deseja rolar
+// };
+
+// const scrollRight = () => {
+//     const projetosContainer = document.querySelector('.projetos-content');
+//     projetosContainer.scrollLeft += 200; // Você pode ajustar o valor de acordo com a quantidade que deseja rolar
+// };
