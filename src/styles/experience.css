@@ -1,7 +1,12 @@
 #experience {
   background: var(--bg-dark-blue);
   border-bottom: 3px solid var(--main-color);
+  overflow-x: auto;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 2rem;
 }
+
 #experience > .flex-items {
   justify-content: center;
   align-items: center;
@@ -10,12 +15,38 @@
 #experience ul {
   display: flex;
   list-style: none;
+  gap: 1.4rem;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  width: 100%;
+  overflow-y: hidden;
 }
 #experience ul li {
-  background: var(--bg-blue);
+  background: var(--bg-blue-secondary);
   margin: 0 1rem;
-  padding: 1rem 0.7rem;
+  padding: 1rem 1.2rem;
   border-radius: 4px;
+  text-align: center;
+  width: 600px;
+}
+#experience ul li * {
+  color: var(--bg-light-secondary) !important;
+}
+#experience ul li {
+  flex-shrink: 0;
+}
+
+#experience ul li:hover {
+  background: var(--bg-blue);
+}
+#experience ul li:hover,
+#experience ul li:hover * {
+  color: #fff !important;
+  filter: brightness(100%);
+}
+
+.experience-container {
+  position: relative;
 }
 
 .experience-container > .flex-items {
@@ -32,11 +63,34 @@
   color: #fff;
 }
 
+.experience-container > p {
+  padding: 0.5rem;
+}
+
 #experience img {
   object-fit: cover;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 10px;
   margin-bottom: 0.5rem;
+  margin-left: 0.6rem;
   border: 1px solid var(--main-color);
+  filter: brightness(50%);
+}
+
+#experience .icons-competencias > * {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-right: 0.4rem;
+}
+
+#experience ul::-webkit-scrollbar {
+  width: 5px;
+  /* Chrome */
+}
+
+#experience ul::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+  width: 1px;
 }

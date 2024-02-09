@@ -3,13 +3,18 @@
 :root {
   --bg-dark: #000;
   --bg-dark-blue: #09111c;
+  --bg-blue-secondary: #0b131e;
   --bg-blue: #0e1724;
   --bg-white: #fff;
   --bg-secundary: #7290aa;
   --bg-grey: #333;
   --bg-light: #f4f4f4;
+  --bg-light-secondary: #c9c9c9;
   --main-color: #ffbc00;
+  --tag-job: #0fa115;
+  --tag-estudos: #5646a7;
   --max-width: 1100px;
+  /* --max-width2: 100%; */
 }
 
 * {
