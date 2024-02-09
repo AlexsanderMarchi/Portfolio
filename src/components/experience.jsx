@@ -59,25 +59,6 @@ function Experience() {
       tag: "tag tag-estudos",
       tag_type: "Currículo",
     },
-    {
-      id: 3,
-      imagem: senai,
-      data: [<FaRegCalendarCheck />, " Maio de 2021 - Dezembro de 2023"],
-      competencias: [
-        <FaReact />,
-        <IoLogoJavascript />,
-        <FaHtml5 />,
-        <FaCss3Alt />,
-        <FaNodeJs />,
-        <BiLogoPostgresql />,
-        <SiCypress />,
-      ],
-      descricao:
-        "Na instituição Senai de São José, me formei como Técnico em Desenvolvimento de Sistemas, aprendendo programação de baixo nível assim como de alto nível, Banco de Dados, projetos em equipe, além de Modelagem e Testes de Sistemas.",
-      title: "Desenvolvimento de Sistema",
-      tag: "tag tag-estudos",
-      tag_type: "Currículo",
-    },
   ];
 
   return (
