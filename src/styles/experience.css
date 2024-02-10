@@ -15,9 +15,10 @@
   display: flex;
   list-style: none;
   gap: 1.4rem;
-  /* justify-content: flex-start; */
-  justify-content: center;
+  justify-content: flex-start;
+  /* justify-content: center; */
   overflow-x: auto;
+  /* overflow-x: hidden; */
   width: 100%;
   overflow-y: hidden;
   padding-bottom: 2rem;
@@ -100,4 +101,37 @@
 #experience ul::-webkit-scrollbar-thumb {
   background: var(--main-color);
   border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  #experience {
+    padding-left: 0.5rem;
+    padding-right: 0.2rem;
+  }
+  #experience img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #experience ul li {
+    width: 510px;
+  }
+
+  .experience-container > .flex-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  #experience ul li {
+    width: 320px;
+  }
+}
+@media (max-width: 300px) {
+  #experience ul li {
+    width: 230px;
+  }
+  #experience img {
+    margin-top: 1rem;
+  }
 }

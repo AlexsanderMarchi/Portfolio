@@ -42,3 +42,22 @@
   height: 50%;
   align-items: center;
 }
+
+@media (max-width: 1025px) {
+  #header-container {
+    height: 50vh;
+  }
+  #header-container #showcase {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  #header-container #showcase .title {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 400px) {
+  #header-container #showcase .title {
+    font-size: 1rem;
+  }
+}

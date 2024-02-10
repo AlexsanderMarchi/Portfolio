@@ -63,3 +63,21 @@
 .bio1 {
   margin-bottom: 1rem;
 }
+
+@media (max-width: 600px) {
+  .about-container {
+    grid-template-areas:
+      "img1 "
+      "bio1"
+      "img2"
+      "bio2 ";
+    gap: 1rem;
+  }
+  .about-container .bio1,
+  .about-container .bio2 {
+    border-left: none;
+    border-right: none;
+    border-top: 2px var(--main-color) solid;
+    width: 300px;
+  }
+}

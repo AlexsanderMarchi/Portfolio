@@ -11,7 +11,10 @@ function Footer() {
   return (
     <footer id="main-footer">
       <div class="footer-content container flex-items">
-        <p>Telefone/Whatsapp:&nbsp;&nbsp; +55 (48) 48 99678-8585</p>
+        <div className="phone">
+          <p>Telefone/Whatsapp:&nbsp;&nbsp;</p>
+          <p>+55 (48) 48 99678-8585</p>
+        </div>
         <div class="social flex-items">
           <a href="mailto:alexsandermarchi@gmail.com" target="_blank">
             <AiTwotoneMail className="contact" />

@@ -22,7 +22,7 @@ function Projetos() {
       id: 2,
       imagem: petflix,
       descricao:
-        "Criação de um Streaming voltado para Pets, sendo desenvolvido em dupla, usando Firebase para armazenamento de videos, React e Node.js na parte de API.",
+        "Um Streaming voltado para Pets, sendo desenvolvido em dupla, usando Firebase para armazenamento de videos, React e Node.js na parte de API.",
       title: "Petflix",
       github: "https://github.com/AlexsanderMarchi/petFlix",
       website: "https://pet-flix-henna.vercel.app/",
@@ -39,7 +39,7 @@ function Projetos() {
       id: 4,
       imagem: nativeMovies,
       descricao:
-        "Criação de aplicativos em React Native, com desenvolvimento de perfil e rede social utilizando Firebase para troca de mensagem em tempo real.",
+        "Foi criado aplicativos em React Native, com desenvolvimento de perfil e rede social utilizando Firebase para troca de mensagem em tempo real.",
       title: "Expo e Rede Social",
       github: "https://github.com/AlexsanderMarchi/React-Native",
     },
@@ -47,7 +47,7 @@ function Projetos() {
       id: 5,
       imagem: pigGame,
       descricao:
-        "Utilização de canvas no JS para desenvolvimento de uma cópia do bomberman, contendo IA para os inimigos. Foi desenvolvido e apresentado em grupo, contendo 4 fases e um Boss final. Clique Abaixo para testar o jogo",
+        "Utilizado canvas no JS para desenvolver uma cópia do bomberman, contendo IA para os inimigos. Foi desenvolvido e apresentado em grupo, contendo 4 fases e um Boss final.",
       title: "Bomber Pig",
       github: "https://github.com/AlexRuan00/pig-bomb",
       website: "https://resilient-cheesecake-4e0caa.netlify.app/",

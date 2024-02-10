@@ -24,3 +24,16 @@
 .contact:hover {
   color: var(--main-color);
 }
+
+.phone {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+  .phone {
+    flex-direction: column;
+  }
+}
