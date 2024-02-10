@@ -16,3 +16,11 @@
 .social {
   gap: 1rem;
 }
+
+.contact {
+  width: 27px;
+  height: 27px;
+}
+.contact:hover {
+  color: var(--main-color);
+}

@@ -56,9 +56,13 @@
   align-items: flex-start;
 }
 .experience-container #info {
-  padding: 1rem;
+  padding: 0 1rem;
   align-items: center;
   text-align: center;
+}
+.experience-container #info h5 {
+  padding-top: 0.5rem;
+  letter-spacing: 1px;
 }
 .experience-container #info h2 {
   color: #fff;

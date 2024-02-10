@@ -71,8 +71,10 @@
   filter: brightness(20%);
 }
 
-#projetos .projeto .projeto-text h2 {
-  align-self: center;
+#projetos .projeto .projeto-text h2,
+#projetos .projeto .projeto-text p,
+#projetos .projeto .projeto-text a {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #projetos a {

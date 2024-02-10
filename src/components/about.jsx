@@ -1,9 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-import { Link, Element } from "react-scroll";
 import "../styles/utilities.css";
 import "../styles/about.css";
-import Lottie from "lottie-react";
-import scrollAnimation from "../assets/scroll-white.json";
 import myself from "../assets/Myself.jpg";
 import random from "../assets/Me.jpg";
 
@@ -40,26 +36,3 @@ function About() {
 }
 
 export default About;
-
-{
-  /* <Element name="section1"></Element> */
-}
-{
-  /* <a href="#">
-          <Lottie animationData={scrollAnimation}
-              loop
-              autoplay
-              speed={5}
-              style={{ width: '200px', height: '100px' }} />
-      </a> */
-}
-
-{
-  /* <Link to="section2" spy={true} smooth={true} duration={500} offset={-25} delay={100}>
-          <Lottie animationData={scrollAnimation}
-              loop
-              autoplay
-              speed={5}
-              style={{ width: '200px', height: '100px' }} />
-      </Link> */
-}
