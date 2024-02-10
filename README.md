@@ -2,7 +2,7 @@
 
 ## :clipboard: About:
 
-Scan here or click on the link to enter the site: [portfolio-orpin-delta-26.vercel.app/](https://portfolio-orpin-delta-26.vercel.app/){:target="_blank"}
+Scan here or click on the link to enter the site: <a href="https://portfolio-orpin-delta-26.vercel.app/" target="_blank">portfolio-orpin-delta-26.vercel.app/</a>
 
 <p align="center">
   <img src="portfolio.png" alt="qrCode" width="300" height="300"/>
