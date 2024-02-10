@@ -1,7 +1,7 @@
 #header-container {
   background: url("../assets/showcase1.jpg") no-repeat center center/cover;
   position: relative;
-  height: 95vh;
+  height: 70vh;
   width: 100%;
   border-bottom: 3px solid var(--main-color);
 }
