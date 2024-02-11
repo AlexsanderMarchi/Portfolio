@@ -1,7 +1,7 @@
 #header-container {
   background: url("../assets/showcase1.jpg") no-repeat center center/cover;
   position: relative;
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   border-bottom: 3px solid var(--main-color);
 }
@@ -41,6 +41,14 @@
   grid-template-columns: repeat(2, 1fr);
   height: 50%;
   align-items: center;
+}
+#header-container #showcase .showcase-info h2 {
+  color: var(--bg-light);
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+#header-container #showcase .showcase-info .txt {
+  color: var(--main-color);
 }
 
 @media (max-width: 1025px) {

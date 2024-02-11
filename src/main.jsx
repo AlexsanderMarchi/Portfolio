@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/home";
-import Experiences from "./pages/experiences";
+import Contact from "./pages/contact";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
-  { path: "/Experiences", element: <Experiences /> },
+  { path: "/Contact", element: <Contact /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

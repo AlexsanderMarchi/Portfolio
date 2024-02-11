@@ -1,0 +1,65 @@
+#contacts-form-submission {
+  background: var(--bg-blue);
+  color: #fff;
+}
+#contacts-form-submission .container {
+  display: flex;
+  flex-direction: column;
+}
+#contacts-form-submission .container > h4 {
+  padding: 1rem 0 0.5rem 0;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+#contacts-form-submission .container > h1,
+#contacts-form-submission .container > h4,
+#contacts-form-submission .container .underline {
+  align-self: center;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.form-container .contact-form {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-container .contact-form label {
+  margin: 0.5rem 0;
+}
+.form-container .contact-form input {
+  width: 90%;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.2rem;
+}
+.form-container .textarea,
+.form-container button {
+  grid-column: 1 / span 2;
+}
+.form-container .contact-form textarea {
+  padding: 0.5rem;
+  width: 95%;
+  height: 85px;
+  font-size: 1.2rem;
+}
+.form-container button {
+  background: var(--bg-grey);
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  margin-top: 1.2rem;
+  padding: 0.5rem 5rem;
+  align-self: center;
+  justify-self: center;
+  transition: all 0.2s;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.form-container button:hover {
+  background: var(--main-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
