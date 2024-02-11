@@ -28,11 +28,11 @@ function ContactForm() {
             />
           </div>
           <div className="contact-form">
-            <label htmlFor="text">Telefone/WhatsApp</label>
-            <input id="text" type="text" name="text" />
+            <label htmlFor="phone">Telefone/WhatsApp</label>
+            <input id="phone" type="phone" name="phone" />
             <ValidationError
               prefix="Telefone/WhatsApp"
-              field="text"
+              field="phone"
               errors={state.errors}
             />
           </div>

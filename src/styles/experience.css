@@ -104,6 +104,14 @@
 }
 
 @media (max-width: 1024px) {
+  #experience ul li {
+    background: var(--bg-blue);
+  }
+  #experience ul li,
+  #experience ul li * {
+    color: #fff !important;
+    filter: brightness(100%);
+  }
   #experience ul {
     justify-content: flex-start;
   }
