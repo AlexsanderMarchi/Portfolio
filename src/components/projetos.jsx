@@ -7,6 +7,7 @@ import snakeGame from "../assets/SnakeGame.gif";
 import senaiSA from "../assets/senaiSA.png";
 import postman from "../assets/postman.png";
 import movieTracker from "../assets/movieTracker.png";
+import globe3d from "../assets/globe3d.gif";
 
 function Projetos() {
   const projetosList = [
@@ -71,6 +72,15 @@ function Projetos() {
       title: "Movie Tracker",
       github: "https://github.com/AlexsanderMarchi/MovieTracker",
       website: "https://movie-tracker-rosy.vercel.app/",
+    },
+    {
+      id: 8,
+      imagem: globe3d,
+      descricao:
+        "Planeta Terra em 3D, desenvolvido usando Three.js, com APIs de geolocalização e para identificar o país que for clicado. Esta em processo de aprimoramento, sendo desenvolvido com um colega ",
+      title: "Globe 3D",
+      github: "https://github.com/AlexsanderMarchi/Globo3D",
+      website: "https://globo3-d-x18o.vercel.app/",
     },
   ];
 
