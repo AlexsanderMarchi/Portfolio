@@ -103,7 +103,7 @@
   border-radius: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   #experience ul li {
     background: var(--bg-blue);
   }
@@ -125,25 +125,21 @@
     width: 120px;
     height: 120px;
   }
-
   #experience ul li {
-    width: 510px;
+    width: 60vw;
   }
+}
 
+@media (max-width: 600px) {
   .experience-container > .flex-items {
     flex-direction: column;
     align-items: center;
   }
-}
-@media (max-width: 400px) {
   #experience ul li {
-    width: 320px;
+    width: 90vw;
   }
 }
 @media (max-width: 300px) {
-  #experience ul li {
-    width: 230px;
-  }
   #experience img {
     margin-top: 1rem;
   }

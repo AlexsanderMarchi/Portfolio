@@ -18,6 +18,12 @@
   /* --max-width2: 100%; */
 }
 
+@media (min-width: 1700px) {
+  :root {
+    --max-width: 80vw;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
