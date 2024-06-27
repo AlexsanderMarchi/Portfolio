@@ -14,13 +14,17 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { SiCypress } from "react-icons/si";
 // import starWars from '../assets/starWars.json';
 import { FaRegCalendarCheck } from "react-icons/fa";
+import useTranslationStore from "../store/translationStore";
 
 function Experience() {
+  const autoTranslation = useTranslationStore((state) => state.autoTranslation);
+
   const experienceList = [
     {
       id: 1,
       imagem: estacio,
       data: [<FaRegCalendarAlt />, " Fevereiro de 2024 - Agosto de 2026"],
+      dataEnglish: [<FaRegCalendarAlt />, " February 2024 - August 2026"],
       competencias: [
         <FaReact />,
         <IoLogoJavascript />,
@@ -36,11 +40,17 @@ function Experience() {
       subtitle: "Analise e Desenvolvimento de Sistema",
       tag: "tag tag-estudos",
       tag_type: "Estudo",
+      descricaoEnglish:
+        "Currently, I am studying at Estacio, learning to analyze, design, develop, and implement information systems.",
+      titleEnglish: "Degree",
+      subtitleEnglish: "Analysis and Development",
+      tag_typeEnglish: "Study",
     },
     {
       id: 2,
       imagem: senai,
       data: [<FaRegCalendarCheck />, " Maio de 2021 - Dezembro de 2023"],
+      dataEnglish: [<FaRegCalendarAlt />, " May 2021 - December 2023"],
       competencias: [
         <FaReact />,
         <IoLogoJavascript />,
@@ -56,32 +66,57 @@ function Experience() {
       subtitle: "Desenvolvimento de Sistema",
       tag: "tag tag-estudos",
       tag_type: "Estudo",
+      descricaoEnglish:
+        "At Senai São José, I completed the Technical course in Systems Development, learning low-level and high-level programming, databases, teamwork projects, as well as system modeling, maintenance, and testing. ",
+      titleEnglish: "Technical",
+      subtitleEnglish: "Systems Development",
+      tag_typeEnglish: "Study",
     },
   ];
 
   return (
     <div id="experience" className="py-3">
       <div className="flex-items">
-        <h1>Experiências</h1>
+        {!autoTranslation ? <h1>Experiências</h1> : <h1>Experiences</h1>}
         <div className="underline"></div>
         <ul>
           {Object.values(experienceList).map((experience) => (
             <li key={experience.id}>
               <div className="experience-container py-2">
-                <p className={experience.tag}>{experience.tag_type}</p>
+                {!autoTranslation ? (
+                  <p className={experience.tag}>{experience.tag_type}</p>
+                ) : (
+                  <p className={experience.tag}>{experience.tag_typeEnglish}</p>
+                )}
                 <div className="flex-items">
                   <img src={experience.imagem} />
                   <div id="info" className="flex-items">
-                    <h2>{experience.title}</h2>
-                    <h5>{experience.subtitle}</h5>
+                    {!autoTranslation ? (
+                      <h2>{experience.title}</h2>
+                    ) : (
+                      <h2>{experience.titleEnglish}</h2>
+                    )}
+                    {!autoTranslation ? (
+                      <h5>{experience.subtitle}</h5>
+                    ) : (
+                      <h5>{experience.subtitleEnglish}</h5>
+                    )}
                     <div className="underline-subtitle"></div>
-                    <p>{experience.descricao}</p>
+                    {!autoTranslation ? (
+                      <p>{experience.descricao}</p>
+                    ) : (
+                      <p>{experience.descricaoEnglish}</p>
+                    )}
                   </div>
                 </div>
                 <div className="icons-competencias py-2">
                   {experience.competencias}
                 </div>
-                <p>{experience.data}</p>
+                {!autoTranslation ? (
+                  <p>{experience.data}</p>
+                ) : (
+                  <p>{experience.dataEnglish}</p>
+                )}
               </div>
             </li>
           ))}

@@ -6,13 +6,19 @@ import {
   AiTwotoneMail,
   AiFillLinkedin,
 } from "react-icons/ai";
+import useTranslationStore from "../store/translationStore";
 
 function Footer() {
+  const autoTranslation = useTranslationStore((state) => state.autoTranslation);
   return (
     <footer id="main-footer">
       <div class="footer-content container flex-items">
         <div className="phone">
-          <p>Telefone/Whatsapp:&nbsp;&nbsp;</p>
+          {!autoTranslation ? (
+            <p>Telefone/Whatsapp:&nbsp;&nbsp;</p>
+          ) : (
+            <p>Phone/Whatsapp:&nbsp;&nbsp;</p>
+          )}
           <p>+55 (48) 48 99678-8585</p>
         </div>
         <div class="social flex-items">

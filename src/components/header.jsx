@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "../styles/utilities.css";
 import "../styles/header.css";
+import useTranslationStore from "../store/translationStore";
 
 function Header() {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
+  const autoTranslation = useTranslationStore((state) => state.autoTranslation);
+  const translationClicked = useTranslationStore(
+    (state) => state.translationClicked
+  );
 
   useEffect(() => {
-    const words = [" meus Projetos.", " minhas Experiências."];
+    const words = autoTranslation
+    ? [" my Projects.", " my Experiences."]
+    : [" meus Projetos.", " minhas Experiências."];
     const wait = 3000;
 
     const type = () => {
@@ -38,23 +44,45 @@ function Header() {
   return (
     <header id="header-container" className="flex-items py-1">
       <div className="container">
-        <div id="navbar" className="flex-items">
-          <Link to={`/`}>
-            <a href="#">Home</a>
-          </Link>
-          {/* <Link to={`/Contact`}>
-            <a href="#">Contatos</a>
-          </Link> */}
-
-          {/* <a href="#">Projetos</a> */}
-        </div>
+        {!autoTranslation ? (
+          <div id="navbar" className="flex-items">
+            <a href="#" onClick={translationClicked}>
+              Inglês
+            </a>
+            <a href="#" className="translationIndex">
+              Português
+            </a>
+          </div>
+        ) : (
+          <div id="navbar" className="flex-items">
+            <a href="#" className="translationIndex">
+              English
+            </a>
+            <a href="#" onClick={translationClicked}>
+              Portuguese
+            </a>
+          </div>
+        )}
         <div id="showcase">
           <div className="showcase-info">
-            <h1 className="title">&lt; Bem vindo(a) ao meu portfólio /&gt;</h1>
-            <h2>
-              Aqui você encontrará
-              <span className="txt">{text}</span>
-            </h2>
+            {!autoTranslation ? (
+              <h1 className="title">
+                &lt; Bem vindo(a) ao meu portfólio /&gt;
+              </h1>
+            ) : (
+              <h1 className="title">&lt; Wellcome to my portfolio /&gt;</h1>
+            )}
+            {!autoTranslation ? (
+              <h2>
+                Aqui você encontrará
+                <span className="txt">{text}</span>
+              </h2>
+            ) : (
+              <h2>
+                Right Here you will find
+                <span className="txt">{text}</span>
+              </h2>
+            )}
           </div>
         </div>
       </div>

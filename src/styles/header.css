@@ -33,9 +33,10 @@
   border-bottom: 3px solid transparent;
   transition: all 0.4s;
 }
-#header-container #navbar a:hover {
+#header-container #navbar .translationIndex {
   border-bottom: 3px solid var(--main-color);
 }
+
 #header-container #showcase {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
