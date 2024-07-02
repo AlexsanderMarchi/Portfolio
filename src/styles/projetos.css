@@ -16,11 +16,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0rem;
+  width: 100%;
 }
 #projetos ul li {
   display: flex;
-  width: 50vh;
-  height: 50vh;
+  width: 100%;
+  height: 30rem;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 #projetos .projeto {
@@ -88,23 +89,21 @@
   color: var(--bg-white);
   text-decoration: underline;
 }
-
-@media (min-width: 1650px) {
+@media (min-width: 1025px) and (max-width: 1600px) {
   #projetos ul li {
-    width: 25vw;
+    height: 22rem;
   }
 }
-@media (max-width: 1370px) {
+@media (max-width: 1024px) {
   #projetos ul {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
   }
-  /* #projetos ul li {
-    width: 30vh;
-    height: 30vh;
-  }  */
+  #projetos ul li {
+    height: 24rem;
+  }
 }
-@media (max-width: 912px) {
+@media (max-width: 900px) {
   #projetos ul {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -118,8 +117,7 @@
     font-size: 0.8rem;
   }
   #projetos ul li {
-    width: 40vh;
-    height: 40vh;
+    height: 21rem;
   }
 }
 @media (max-height: 430px) {
@@ -127,9 +125,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
   #projetos ul li {
-    width: 85vh;
-    height: 85vh;
+    height: 19rem;
   }
+
   #projetos .projeto .projeto-text h2 {
     font-size: 1rem;
   }

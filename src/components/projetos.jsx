@@ -105,7 +105,7 @@ function Projetos() {
 
   return (
     <div id="projetos" className="flex-items py-3">
-      <div className=" flex-items">
+      <div className="container flex-items">
         {!autoTranslation ? <h1>Projetos</h1> : <h1>Projects</h1>}
         <div className="underline"></div>
         <ul>
