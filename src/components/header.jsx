@@ -70,7 +70,7 @@ function Header() {
                 &lt; Bem vindo(a) ao meu portfólio /&gt;
               </h1>
             ) : (
-              <h1 className="title">&lt; Wellcome to my portfolio /&gt;</h1>
+              <h1 className="title">&lt; Welcome to my portfolio /&gt;</h1>
             )}
             {!autoTranslation ? (
               <h2>

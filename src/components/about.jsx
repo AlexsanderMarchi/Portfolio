@@ -44,8 +44,8 @@ function About() {
             ) : (
               <p>
                 Having already completed a technical course in Systems
-                Development at Senai Sao Jose, and now I'm fighting more day
-                after day to develop myself as a professional and as a person. I
+                Development at Senai Sao Jose, now I'm fighting more day after
+                day to develop myself as a professional and as a person. I
                 constantly seek challenges that lead me to learn something new.
               </p>
             )}
