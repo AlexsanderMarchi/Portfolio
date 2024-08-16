@@ -56,7 +56,6 @@
   padding: 0 1rem;
   height: 250px;
   width: 100%;
-  font-size: smaller;
   background: var(--bg-light);
 }
 
@@ -76,6 +75,7 @@
   }
   .about-container .bio1,
   .about-container .bio2 {
+    font-size: smaller;
     border-left: none;
     border-right: none;
     border-top: 2px var(--main-color) solid;
