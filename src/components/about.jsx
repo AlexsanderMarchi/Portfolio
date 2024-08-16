@@ -21,7 +21,11 @@ function About() {
                 música boa, atualmente, estou me graduando na instituição
                 Estácio em Análise e Desenvolvimento de Sistemas. Ja desenvolvi
                 em JavaScript, React, React Native, Three.js, C++, Node.js e
-                SQL, e a cada dia aprendendo mais.
+                SQL, e a cada dia aprendendo mais. Ja tendo concluído o curso
+                Técnico em Desenvolvimento de Sistemas no Senai São José, estou
+                cada dia lutando mais para conseguir me desenvolver
+                profissionalmente e como pessoa. Eu busco constantemente
+                desafios que me levem a aprender algo novo.
               </p>
             ) : (
               <p>
@@ -30,10 +34,14 @@ function About() {
                 degree in Systems Analysis and Development at Estácio. I have
                 experience developing in JavaScript, React, React Native,
                 Three.js, C++, Node.js e SQL, and I am learning more every day.
+                Having already completed a technical course in Systems
+                Development at Senai Sao Jose, now I'm fighting more day after
+                day to develop myself as a professional and as a person. I
+                constantly seek challenges that lead me to learn something new.
               </p>
             )}
           </div>
-          <div className="bio2">
+          {/* <div className="bio2">
             {!autoTranslation ? (
               <p>
                 Ja tendo concluído o curso Técnico em Desenvolvimento de
@@ -49,8 +57,8 @@ function About() {
                 constantly seek challenges that lead me to learn something new.
               </p>
             )}
-          </div>
-          <img src={random} alt="Myself" className="img2" />
+          </div> */}
+          {/* <img src={random} alt="Myself" className="img2" /> */}
         </div>
       </div>
     </div>

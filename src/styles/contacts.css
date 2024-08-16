@@ -19,8 +19,11 @@
 }
 
 .form-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .form-container .contact-form {
   padding: 0.5rem 1rem;
@@ -31,7 +34,8 @@
   margin: 0.5rem 0;
 }
 .form-container .contact-form input {
-  width: 90%;
+  /* width: 90%; */
+  width: 50vw;
   padding: 0.2rem 0.5rem;
   font-size: 1.2rem;
 }
@@ -41,7 +45,8 @@
 }
 .form-container .contact-form textarea {
   padding: 0.5rem;
-  width: 95%;
+  /* width: 95%; */
+  width: 50vw;
   height: 85px;
   font-size: 1.2rem;
 }
@@ -65,7 +70,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   #contacts-form-submission {
     padding: 0 1.1rem;
   }
@@ -79,4 +84,4 @@
   .form-container button {
     grid-column: 1;
   }
-}
+} */
