@@ -7,8 +7,11 @@ import {
   FaNodeJs,
   FaHtml5,
   FaCss3Alt,
+  FaJava,
+  FaPython,
   FaRegCalendarAlt,
 } from "react-icons/fa";
+import { SiPhp } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiCypress } from "react-icons/si";
@@ -26,13 +29,12 @@ function Experience() {
       data: [<FaRegCalendarAlt />, " Fevereiro de 2024 - Agosto de 2026"],
       dataEnglish: [<FaRegCalendarAlt />, " February 2024 - August 2026"],
       competencias: [
-        <FaReact />,
+        <SiPhp />,
+        <FaPython />,
+        <FaJava />,
         <IoLogoJavascript />,
         <FaHtml5 />,
         <FaCss3Alt />,
-        <FaNodeJs />,
-        <BiLogoPostgresql />,
-        <SiCypress />,
       ],
       descricao:
         "Atualmente estou me graduando na Estacio, aprendendo a analisar, projetar, desenvolver e implementar sistemas de informação",
