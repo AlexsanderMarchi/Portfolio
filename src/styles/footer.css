@@ -27,8 +27,6 @@
 
 .phone {
   display: flex;
-  visibility: hidden;
-  /* here */
 }
 
 @media (max-width: 600px) {
@@ -39,5 +37,3 @@
     flex-direction: column;
   }
 }
-
-/* projetos gap, about second text, phone invisible, contact column, font size e ... */
