@@ -33,8 +33,8 @@ function Experience() {
     {
       id: 1,
       imagem: senai,
-      data: [<FaRegCalendarCheck />, " Maio de 2021 - Dezembro de 2023"],
-      dataEnglish: [<FaRegCalendarCheck />, " May 2021 - December 2023"],
+      data: [<FaRegCalendarCheck />, " Maio de 2022 - Dezembro de 2023"],
+      dataEnglish: [<FaRegCalendarCheck />, " May 2022 - December 2023"],
       competencias: [
         <FaReact />,
         <IoLogoJavascript />,

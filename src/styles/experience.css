@@ -17,7 +17,7 @@
   gap: 1.4rem;
   justify-content: flex-start;
   overflow-x: auto;
-  box-shadow: inset 1px 12px 4rem #001431;
+  /* box-shadow: inset 1px 12px 4rem #001431; */
   width: 85%;
   overflow-y: hidden;
   padding-bottom: 2rem;
