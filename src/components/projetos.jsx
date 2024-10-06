@@ -37,26 +37,26 @@ function Projetos() {
       github: "https://github.com/AlexRuan00/pig-bomb",
       website: "https://resilient-cheesecake-4e0caa.netlify.app/",
     },
-    {
-      id: 3,
-      imagem: nativeMovies,
-      descricao:
-        "Foi criado aplicativos em React Native, com desenvolvimento de perfil e rede social utilizando Firebase para troca de mensagem em tempo real.",
-      descricaoEnglish:
-        "Created applications in React Native, developing profile and social network features using Firebase for real-time messaging.",
-      title: "Expo e Rede Social",
-      github: "https://github.com/AlexsanderMarchi/React-Native",
-    },
-    {
-      id: 4,
-      imagem: postman,
-      descricao:
-        "Desenvolvimento de APIs em sala de aula, utilizando Node.js e ElephantSQL para manipulação de dados e Postman para endpoints.",
-      descricaoEnglish:
-        "Developed APIs in class using Node.js and ElephantSQL for data manipulation, and Postman for testing endpoints.",
-      title: "APIs",
-      github: "https://github.com/AlexsanderMarchi/BackEnd-Node.js",
-    },
+    // {
+    //   id: 3,
+    //   imagem: nativeMovies,
+    //   descricao:
+    //     "Foi criado aplicativos em React Native, com desenvolvimento de perfil e rede social utilizando Firebase para troca de mensagem em tempo real.",
+    //   descricaoEnglish:
+    //     "Created applications in React Native, developing profile and social network features using Firebase for real-time messaging.",
+    //   title: "Expo e Rede Social",
+    //   github: "https://github.com/AlexsanderMarchi/React-Native",
+    // },
+    // {
+    //   id: 4,
+    //   imagem: postman,
+    //   descricao:
+    //     "Desenvolvimento de APIs em sala de aula, utilizando Node.js e ElephantSQL para manipulação de dados e Postman para endpoints.",
+    //   descricaoEnglish:
+    //     "Developed APIs in class using Node.js and ElephantSQL for data manipulation, and Postman for testing endpoints.",
+    //   title: "APIs",
+    //   github: "https://github.com/AlexsanderMarchi/BackEnd-Node.js",
+    // },
     {
       id: 5,
       imagem: petflix,
