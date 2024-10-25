@@ -3,6 +3,7 @@ import "../styles/experience.css";
 import senai from "../assets/senaiLogo.jpg";
 import estacio from "../assets/estacioLogo.png";
 import radarsaude from "../assets/radarsaudeLogo.png";
+import leadMedia from "../assets/leadMediaLogo.jpg";
 import {
   FaReact,
   FaNodeJs,
@@ -12,18 +13,18 @@ import {
   FaPython,
   FaRegCalendarAlt,
   FaGitAlt,
+  FaRegCalendarCheck,
 } from "react-icons/fa";
-import { SiPhp } from "react-icons/si";
+import { SiPhp, SiSpring } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoSpringBoot } from "react-icons/bi";
 import {
   SiCypress,
   SiTypescript,
   SiTailwindcss,
   SiMysql,
 } from "react-icons/si";
-// import starWars from '../assets/starWars.json';
-import { FaRegCalendarCheck } from "react-icons/fa";
+import { GiArtificialIntelligence } from "react-icons/gi";
 import useTranslationStore from "../store/translationStore";
 
 function Experience() {
@@ -65,6 +66,7 @@ function Experience() {
       competencias: [
         <SiPhp />,
         <FaPython />,
+        <BiLogoSpringBoot />,
         <FaJava />,
         <SiMysql />,
         <IoLogoJavascript />,
@@ -83,32 +85,32 @@ function Experience() {
       subtitleEnglish: "Analysis and System Development",
       tag_typeEnglish: "Study",
     },
-    // {
-    //   id: 3,
-    //   imagem: senai,
-    //   data: [<FaRegCalendarAlt />, " Setembro de 2024 - Presente"],
-    //   dataEnglish: [<FaRegCalendarAlt />, " September 2024 - Present"],
-    //   competencias: [
-    //     <FaReact />,
-    //     <IoLogoJavascript />,
-    //     <FaHtml5 />,
-    //     <FaCss3Alt />,
-    //     <FaNodeJs />,
-    //     <BiLogoPostgresql />,
-    //     <SiCypress />,
-    //   ],
-    //   descricao:
-    //     "Na instituição Senai de São José, me formei em Desenvolvimento de Sistemas, aprendendo programação de baixo nível assim como de alto nível, Banco de Dados, projetos em equipe, além de Modelagem, Manutenção e Testes de Sistemas.",
-    //   title: "Técnico",
-    //   subtitle: "Desenvolvimento de Sistema",
-    //   tag: "tag tag-job",
-    //   tag_type: "Trabalho",
-    //   descricaoEnglish:
-    //     "At Senai São José, I completed the Technical course in Systems Development, learning low-level and high-level programming, databases, teamwork projects, as well as system modeling, maintenance, and testing. ",
-    //   titleEnglish: "Technical",
-    //   subtitleEnglish: "Systems Development",
-    //   tag_typeEnglish: "Job",
-    // },
+    {
+      id: 3,
+      imagem: leadMedia,
+      data: [<FaRegCalendarAlt />, " Setembro de 2024 - Presente"],
+      dataEnglish: [<FaRegCalendarAlt />, " September 2024 - Present"],
+      competencias: [
+        <GiArtificialIntelligence />,
+        <FaReact />,
+        <IoLogoJavascript />,
+        <FaHtml5 />,
+        <FaCss3Alt />,
+        <FaNodeJs />,
+        <BiLogoPostgresql />,
+      ],
+      descricao:
+        "Como Freelancer, atuo no desenvolvimento de chatbots com Inteligência Artificial, incluindo LLMs, para a LeadMedia Group, com o objetivo de otimizar a venda de produtos de diversas empresas, indo desde o uso de plataformas como Flowise e Flowbuilder até a implementação completa de páginas web, envolvendo tanto front-end quanto back-end.",
+      title: "LeadMedia Group",
+      subtitle: "Freelancer Como Desenvolvedor Full Stack",
+      tag: "tag tag-job",
+      tag_type: "Trabalho",
+      descricaoEnglish:
+        "As a Freelancer, I contribute to the development of AI-powered chatbots, including LLMs, for LeadMedia Group, aimed at optimizing the sales of various companies' products, spanning from utilizing platforms like Flowise and Flowbuilder to the full implementation of web pages, covering both front-end and back-end development. ",
+      titleEnglish: "LeadMedia Group",
+      subtitleEnglish: "Freelancer As a Full Stack Developer",
+      tag_typeEnglish: "Work",
+    },
     {
       id: 4,
       imagem: radarsaude,
@@ -121,6 +123,8 @@ function Experience() {
         <FaHtml5 />,
         <FaCss3Alt />,
         <SiTailwindcss />,
+        <BiLogoSpringBoot />,
+        <FaJava />,
         <FaNodeJs />,
         <BiLogoPostgresql />,
         <FaGitAlt />,
@@ -135,7 +139,7 @@ function Experience() {
         "As an intern, I am developing applications in TypeScript and Java, utilizing PostgreSQL as the database, while also creating reports and proposing improvements to development practices.",
       titleEnglish: "Radar Saude",
       subtitleEnglish: "Internship in Systems Development",
-      tag_typeEnglish: "Job",
+      tag_typeEnglish: "Work",
     },
   ];
 

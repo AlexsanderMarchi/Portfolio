@@ -19,7 +19,7 @@ function Footer() {
           ) : (
             <p>Phone/Whatsapp:&nbsp;&nbsp;</p>
           )}
-          <p>+55 (48) 48 99678-8585</p>
+          <p>+55 (48) 99678-8585</p>
         </div>
         <div class="social flex-items">
           <a href="mailto:alexsandermarchi@gmail.com" target="_blank">
