@@ -17,36 +17,50 @@ function About() {
           <div className="bio1">
             {!autoTranslation ? (
               <p>
-                Olá, Me chamo Alexsander, 23 anos. Nerd, amante de cinema e
-                música boa, atualmente, estou me graduando na instituição
-                Estácio em Análise e Desenvolvimento de Sistemas. Ja desenvolvi
-                em JavaScript, React, React Native, Three.js, C++, Node.js e
-                SQL, e a cada dia aprendendo mais.
+                Olá, meu nome é Alexsander, tenho 23 anos. Sou nerd e amante de
+                cinema e música boa. Atualmente, estou trabalhando na{" "}
+                <span>Radar Saúde como estagiário</span> em Desenvolvimento de
+                Sistemas e, ao mesmo tempo, como{" "}
+                <span>freelancer na LeadMedia</span>, lidando com projetos que
+                envolvem inteligência artificial. Até agora, já desenvolvi em
+                JavaScript, React, React Native, Three.js, C++, Node.js e Java,
+                além de trabalhar com bancos de dados como PostgreSQL, MySQL,
+                Qdrant e Pinecone e a cada dia, estou aprendendo mais!
               </p>
             ) : (
               <p>
                 Hello, my name is Alexsander. I'm 23 years old, nerd, an avid
-                cinephile and lover of good music, I'm currently pursuing a
-                degree in Systems Analysis and Development at Estácio. I have
-                experience developing in JavaScript, React, React Native,
-                Three.js, C++, Node.js e SQL, and I am learning more every day.
+                cinephile and lover of good music. I currently work at{" "}
+                <span>Radar Saúde as an intern </span>
+                in Systems Development and also as{" "}
+                <span>freelancer at LeadMedia</span>, working on projects
+                involving artificial intelligence. So far, I have developed in
+                JavaScript, React, React Native, Three.js, C++, Node.js, and
+                Java, as well as worked with databases like PostgreSQL, MySQL,
+                Qdrant, and Pinecone, and learning more every day!
               </p>
             )}
           </div>
           <div className="bio2">
             {!autoTranslation ? (
               <p>
-                Ja tendo concluído o curso Técnico em Desenvolvimento de
-                Sistemas no Senai São José, estou cada dia lutando mais para
-                conseguir me desenvolver profissionalmente e como pessoa. Eu
-                busco constantemente desafios que me levem a aprender algo novo.
+                Além de trabalhar, eu também divido meu tempo com a{" "}
+                <span>graduação</span> em Análise e Desenvolvimento de Sistemas
+                na Estácio, onde estou no 2° semestre. Já concluí o{" "}
+                <span>curso Técnico</span> em Desenvolvimento de Sistemas no
+                Senai São José e, a cada dia, estou lutando mais para me
+                desenvolver profissionalmente e como pessoa. Busco
+                constantemente desafios que me façam aprender algo novo.
               </p>
             ) : (
               <p>
-                Having already completed a technical course in Systems
-                Development at Senai Sao Jose, now I'm fighting more day after
-                day to develop myself as a professional and as a person. I
-                constantly seek challenges that lead me to learn something new.
+                In addition to working, I also dedicate my time to my studies,
+                pursuing a <span>degree</span> in Systems Analysis and
+                Development at Estácio, where I'm in my 2nd semester. I have
+                already completed a <span>technical course</span> in Systems
+                Development at Senai São José, and every day I'm striving to
+                develop myself both professionally and personally. I constantly
+                seek challenges that help me learn something new.
               </p>
             )}
           </div>

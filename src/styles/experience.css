@@ -48,6 +48,11 @@
 
 .experience-container {
   position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .experience-container > .flex-items {

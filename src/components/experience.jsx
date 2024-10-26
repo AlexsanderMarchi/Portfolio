@@ -182,14 +182,16 @@ function Experience() {
                       )}
                     </div>
                   </div>
-                  <div className="icons-competencias py-2">
-                    {experience.competencias}
+                  <div>
+                    <div className="icons-competencias py-2">
+                      {experience.competencias}
+                    </div>
+                    {!autoTranslation ? (
+                      <p>{experience.data}</p>
+                    ) : (
+                      <p>{experience.dataEnglish}</p>
+                    )}
                   </div>
-                  {!autoTranslation ? (
-                    <p>{experience.data}</p>
-                  ) : (
-                    <p>{experience.dataEnglish}</p>
-                  )}
                 </div>
               </li>
             ))}

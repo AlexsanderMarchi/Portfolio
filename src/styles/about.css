@@ -6,6 +6,10 @@
 #about h1 {
   color: var(--bg-dark);
 }
+#about span {
+  font-weight: bold;
+}
+
 #about .flex-items {
   justify-content: center;
   align-items: center;
