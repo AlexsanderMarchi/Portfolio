@@ -1,13 +1,12 @@
 import "../styles/utilities.css";
 import "../styles/projetos.css";
 import petflix from "../assets/petflix.png";
-import nativeMovies from "../assets/NativeMovies.png";
 import pigGame from "../assets/PigGame.gif";
 import snakeGame from "../assets/SnakeGame.gif";
-import senaiSA from "../assets/senaiSA.png";
-import postman from "../assets/postman.png";
+// import senaiSA from "../assets/senaiSA.png";
 import movieTracker from "../assets/movieTracker.png";
 import globe3d from "../assets/globe3d.gif";
+import manicure from "../assets/manicure.gif";
 import useTranslationStore from "../store/translationStore";
 
 function Projetos() {
@@ -37,28 +36,8 @@ function Projetos() {
       github: "https://github.com/AlexRuan00/pig-bomb",
       website: "https://resilient-cheesecake-4e0caa.netlify.app/",
     },
-    // {
-    //   id: 3,
-    //   imagem: nativeMovies,
-    //   descricao:
-    //     "Foi criado aplicativos em React Native, com desenvolvimento de perfil e rede social utilizando Firebase para troca de mensagem em tempo real.",
-    //   descricaoEnglish:
-    //     "Created applications in React Native, developing profile and social network features using Firebase for real-time messaging.",
-    //   title: "Expo e Rede Social",
-    //   github: "https://github.com/AlexsanderMarchi/React-Native",
-    // },
-    // {
-    //   id: 4,
-    //   imagem: postman,
-    //   descricao:
-    //     "Desenvolvimento de APIs em sala de aula, utilizando Node.js e ElephantSQL para manipulação de dados e Postman para endpoints.",
-    //   descricaoEnglish:
-    //     "Developed APIs in class using Node.js and ElephantSQL for data manipulation, and Postman for testing endpoints.",
-    //   title: "APIs",
-    //   github: "https://github.com/AlexsanderMarchi/BackEnd-Node.js",
-    // },
     {
-      id: 5,
+      id: 3,
       imagem: petflix,
       descricao:
         "Um Streaming voltado para Pets, sendo desenvolvido em dupla, usando Firebase para armazenamento de videos, React e Node.js na parte de API.",
@@ -68,19 +47,19 @@ function Projetos() {
       github: "https://github.com/AlexsanderMarchi/petFlix",
       website: "https://pet-flix-henna.vercel.app/",
     },
+    // {
+    //   id: 4,
+    //   imagem: senaiSA,
+    //   descricao:
+    //     "Sistema de Ensalamento, com CRUD(modelo MVC e Facade) e quadro de horários. Foi utilizado React, Node.js e SQL. Foi desenvolvido com colegas e apresentado em sala de aula.",
+    //   descricaoEnglish:
+    //     "Classroom Scheduling System with CRUD (MVC model and Facade) and a timetable. Used React, Node.js, and SQL. Developed with colleagues and presented in class.",
+    //   title: "Senai SA",
+    //   github: "https://github.com/PedroHGaspar/Senai-S-A",
+    //   website: "https://senai-sa.vercel.app/",
+    // },
     {
-      id: 6,
-      imagem: senaiSA,
-      descricao:
-        "Sistema de Ensalamento, com CRUD(modelo MVC e Facade) e quadro de horários. Foi utilizado React, Node.js e SQL. Foi desenvolvido com colegas e apresentado em sala de aula.",
-      descricaoEnglish:
-        "Classroom Scheduling System with CRUD (MVC model and Facade) and a timetable. Used React, Node.js, and SQL. Developed with colleagues and presented in class.",
-      title: "Senai SA",
-      github: "https://github.com/PedroHGaspar/Senai-S-A",
-      website: "https://senai-sa.vercel.app/",
-    },
-    {
-      id: 7,
+      id: 4,
       imagem: movieTracker,
       descricao:
         "Como projeto paralelo, estou desenvolvento em React um sistema para busca de filmes, para ver suas informações e filmes similares. E posteriormente também será implementado banco de dados para login",
@@ -91,15 +70,26 @@ function Projetos() {
       website: "https://movie-tracker-rosy.vercel.app/",
     },
     {
-      id: 8,
+      id: 5,
       imagem: globe3d,
       descricao:
-        "Planeta Terra em 3D, desenvolvido usando Three.js, com APIs de geolocalização e para identificar o país que for clicado. ",
+        "Planeta Terra em 3D, desenvolvido usando Three.js, com APIs de geolocalização para identificar o país que for clicado. ",
       descricaoEnglish:
         "3D Planet Earth, developed using Three.js, with geolocation APIs to identify the country clicked on. ",
       title: "Globe 3D",
       github: "https://github.com/AlexsanderMarchi/Globo3D",
       website: "https://globo3-d-x18o.vercel.app/",
+    },
+    {
+      id: 6,
+      imagem: manicure,
+      descricao:
+        "Projeto acadêmico, indo desde apresentar a ideia para o cliente, até seu desenvolvimento e teste. Foi utilizado Java, Spring Boot, PostegreSQL e JavaScript ",
+      descricaoEnglish:
+        "Academic project, ranging from presenting the idea to the client to its development and testing. Java, Spring Boot, PostgreSQL, and JavaScript were used.",
+      title: "Projeto Manicure",
+      github: "https://github.com/AlexsanderMarchi/Manicure-ProjetoDeExtensao",
+      website: "https://manicure-projeto-de-extensao.vercel.app/",
     },
   ];
 
