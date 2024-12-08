@@ -66,6 +66,15 @@
   cursor: pointer;
 }
 
+/* Dark Theme Style */
+#contacts-form-submission.dark-theme {
+  background: linear-gradient(
+    to top,
+    var(--bg-dark-theme-gradient),
+    var(--bg-dark-theme)
+  );
+}
+
 @media (max-width: 800px) {
   #contacts-form-submission {
     padding: 0 1.1rem;

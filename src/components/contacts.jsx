@@ -3,16 +3,21 @@ import { useForm, ValidationError } from "@formspree/react";
 import "../styles/utilities.css";
 import "../styles/contacts.css";
 import useTranslationStore from "../store/translationStore";
+import useThemeStore from "../store/themeStore";
 
 function ContactForm() {
   const autoTranslation = useTranslationStore((state) => state.autoTranslation);
+  const autoTheme = useThemeStore((state) => state.autoTheme);
 
   const [state, handleSubmit] = useForm("xoqgegow");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
   return (
-    <div id="contacts-form-submission">
+    <div
+      id="contacts-form-submission"
+      className={autoTheme ? "dark-theme" : ""}
+    >
       <div className="container py-3">
         {!autoTranslation ? (
           <>

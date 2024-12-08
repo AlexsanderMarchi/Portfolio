@@ -69,7 +69,11 @@
 
 /* Dark Theme Style */
 #about.dark-theme {
-  background: linear-gradient(to top, var(--bg-dark), var(--bg-dark-theme));
+  background: linear-gradient(
+    to top,
+    var(--bg-dark-theme),
+    var(--bg-dark-theme-gradient)
+  );
   border: none;
 }
 #about.dark-theme .about-container .bio1,

@@ -7,11 +7,14 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import useTranslationStore from "../store/translationStore";
+import useThemeStore from "../store/themeStore";
 
 function Footer() {
   const autoTranslation = useTranslationStore((state) => state.autoTranslation);
+  const autoTheme = useThemeStore((state) => state.autoTheme);
+
   return (
-    <footer id="main-footer">
+    <footer id="main-footer" className={autoTheme ? "dark-theme" : ""}>
       <div class="footer-content container flex-items">
         <div className="phone">
           {!autoTranslation ? (
