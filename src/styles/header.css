@@ -37,6 +37,30 @@
   border-bottom: 3px solid var(--main-color);
 }
 
+#header-container #navbar #icons-theme-container {
+  display: flex;
+  font-size: 1.5rem;
+  border: 1px solid var(--main-color);
+  border-radius: 1rem;
+}
+
+.icons-header-content {
+  display: flex;
+  padding: 0.18rem 1rem;
+  border-radius: 1rem;
+}
+
+.icon-header-active {
+  color: var(--main-color);
+  background-color: var(--main-color-trasnparent);
+  /* transition: all 0.4s; */
+}
+
+.icon-header-off {
+  cursor: pointer;
+  color: #fff;
+}
+
 #header-container #showcase {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

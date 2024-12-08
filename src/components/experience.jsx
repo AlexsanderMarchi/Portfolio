@@ -72,6 +72,7 @@ function Experience() {
         <IoLogoJavascript />,
         <FaHtml5 />,
         <FaCss3Alt />,
+        <BiLogoPostgresql />,
       ],
       descricao:
         "Atualmente estou me graduando na Estacio, aprendendo a analisar, projetar, desenvolver e implementar sistemas de informação, com projetos acadêmicos em equipe envolvendo linguagens de Backend e FrontEnd",

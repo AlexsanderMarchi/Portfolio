@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "../styles/utilities.css";
 import "../styles/header.css";
 import useTranslationStore from "../store/translationStore";
+import useThemeStore from "../store/themeStore";
+import { FaSun } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa6";
 
 function Header() {
   const [text, setText] = useState("");
@@ -11,11 +14,13 @@ function Header() {
   const translationClicked = useTranslationStore(
     (state) => state.translationClicked
   );
+  const autoTheme = useThemeStore((state) => state.autoTheme);
+  const themeClicked = useThemeStore((state) => state.themeClicked);
 
   useEffect(() => {
     const words = autoTranslation
-    ? [" my Projects.", " my Experiences."]
-    : [" meus Projetos.", " minhas Experiências."];
+      ? [" my Projects.", " my Experiences."]
+      : [" meus Projetos.", " minhas Experiências."];
     const wait = 3000;
 
     const type = () => {
@@ -44,25 +49,54 @@ function Header() {
   return (
     <header id="header-container" className="flex-items py-1">
       <div className="container">
-        {!autoTranslation ? (
-          <div id="navbar" className="flex-items">
-            <a href="#" onClick={translationClicked}>
-              Inglês
-            </a>
-            <a href="#" className="translationIndex">
-              Português
-            </a>
+        <div id="navbar" className="flex-items">
+          {!autoTranslation ? (
+            <>
+              <a href="#" onClick={translationClicked}>
+                Inglês
+              </a>
+              <a href="#" className="translationIndex">
+                Português
+              </a>
+            </>
+          ) : (
+            <>
+              <a href="#" className="translationIndex">
+                English
+              </a>
+              <a href="#" onClick={translationClicked}>
+                Portuguese
+              </a>
+            </>
+          )}
+          <div id="icons-theme-container">
+            {!autoTheme ? (
+              <>
+                <span
+                  className="icons-header-content icon-header-off"
+                  onClick={themeClicked}
+                >
+                  <FaMoon />
+                </span>
+                <span className="icons-header-content icon-header-active">
+                  <FaSun />
+                </span>
+              </>
+            ) : (
+              <>
+                <span className="icons-header-content icon-header-active">
+                  <FaMoon />
+                </span>
+                <span
+                  className="icons-header-content icon-header-off"
+                  onClick={themeClicked}
+                >
+                  <FaSun />
+                </span>
+              </>
+            )}
           </div>
-        ) : (
-          <div id="navbar" className="flex-items">
-            <a href="#" className="translationIndex">
-              English
-            </a>
-            <a href="#" onClick={translationClicked}>
-              Portuguese
-            </a>
-          </div>
-        )}
+        </div>
         <div id="showcase">
           <div className="showcase-info">
             {!autoTranslation ? (
