@@ -108,6 +108,12 @@
   border-radius: 10px;
 }
 
+/* Dark Theme Style */
+#experience.dark-theme {
+  background: var(--bg-dark-theme);
+  border: none;
+}
+
 @media (max-width: 1180px) {
   #experience ul li {
     background: var(--bg-blue);

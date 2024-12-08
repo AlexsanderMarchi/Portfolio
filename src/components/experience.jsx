@@ -26,9 +26,11 @@ import {
 } from "react-icons/si";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import useTranslationStore from "../store/translationStore";
+import useThemeStore from "../store/themeStore";
 
 function Experience() {
   const autoTranslation = useTranslationStore((state) => state.autoTranslation);
+  const autoTheme = useThemeStore((state) => state.autoTheme);
 
   const experienceList = [
     {
@@ -145,7 +147,7 @@ function Experience() {
   ];
 
   return (
-    <div id="experience" className="py-3">
+    <div id="experience" className={autoTheme ? "py-3 dark-theme" : "py-3"}>
       <div className="flex-items">
         {!autoTranslation ? <h1>Experiências</h1> : <h1>Experiences</h1>}
         <div className="underline"></div>

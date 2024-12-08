@@ -47,7 +47,10 @@ function Header() {
   }, [text, isDeleting, wordIndex]);
 
   return (
-    <header id="header-container" className="flex-items py-1">
+    <header
+      id="header-container"
+      className={autoTheme ? "flex-items py-1 dark-theme" : "flex-items py-1"}
+    >
       <div className="container">
         <div id="navbar" className="flex-items">
           {!autoTranslation ? (

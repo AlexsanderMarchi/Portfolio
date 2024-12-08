@@ -90,6 +90,16 @@
   color: var(--bg-white);
   text-decoration: underline;
 }
+
+/* Dark Theme Style */
+#projetos.dark-theme {
+  background: linear-gradient(to bottom, var(--bg-dark), var(--bg-dark-theme));
+}
+
+#projetos.dark-theme .flex-items > h1 {
+  color: var(--bg-white);
+}
+
 @media (min-width: 1025px) and (max-width: 1600px) {
   #projetos ul li {
     height: 22rem;

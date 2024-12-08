@@ -8,9 +8,11 @@ import movieTracker from "../assets/movieTracker.png";
 import globe3d from "../assets/globe3d.gif";
 import manicure from "../assets/manicure.gif";
 import useTranslationStore from "../store/translationStore";
+import useThemeStore from "../store/themeStore";
 
 function Projetos() {
   const autoTranslation = useTranslationStore((state) => state.autoTranslation);
+  const autoTheme = useThemeStore((state) => state.autoTheme);
 
   const projetosList = [
     {
@@ -94,7 +96,10 @@ function Projetos() {
   ];
 
   return (
-    <div id="projetos" className="flex-items py-3">
+    <div
+      id="projetos"
+      className={autoTheme ? "flex-items py-3 dark-theme" : "flex-items py-3"}
+    >
       <div className="container flex-items">
         {!autoTranslation ? <h1>Projetos</h1> : <h1>Projects</h1>}
         <div className="underline"></div>

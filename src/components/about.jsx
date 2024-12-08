@@ -3,12 +3,17 @@ import "../styles/about.css";
 import myself from "../assets/Myself.jpg";
 import random from "../assets/Me.jpg";
 import useTranslationStore from "../store/translationStore";
+import useThemeStore from "../store/themeStore";
 
 function About() {
   const autoTranslation = useTranslationStore((state) => state.autoTranslation);
+  const autoTheme = useThemeStore((state) => state.autoTheme);
 
   return (
-    <div id="about" className="flex-items py-2">
+    <div
+      id="about"
+      className={autoTheme ? "flex-items py-2 dark-theme" : "flex-items py-2"}
+    >
       <div className="container flex-items">
         {!autoTranslation ? <h1>Sobre Mim</h1> : <h1>About Me</h1>}
         <div className="underline"></div>

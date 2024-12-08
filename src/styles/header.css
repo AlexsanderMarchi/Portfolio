@@ -76,6 +76,11 @@
   color: var(--main-color);
 }
 
+/* Dark Theme Style */
+#header-container.dark-theme {
+  border: none;
+}
+
 @media (max-width: 1025px) {
   #header-container {
     background: url("../assets/showcase4.jpg") no-repeat center center/cover;
