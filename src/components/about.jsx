@@ -24,25 +24,25 @@ function About() {
               <p>
                 Olá, meu nome é Alexsander, tenho 23 anos. Sou nerd e amante de
                 cinema e música boa. Atualmente, estou trabalhando na{" "}
-                <span>Radar Saúde como estagiário</span> em Desenvolvimento de
-                Sistemas e, ao mesmo tempo, como{" "}
-                <span>freelancer na LeadMedia</span>, lidando com projetos que
-                envolvem inteligência artificial. Até agora, já desenvolvi em
-                JavaScript, React, React Native, Three.js, C++, Node.js e Java,
-                além de trabalhar com bancos de dados como PostgreSQL, MySQL,
-                Qdrant e Pinecone e a cada dia, estou aprendendo mais!
+                <span>Radar Saúde como Desenvolvedor Junior</span> e, ao mesmo
+                tempo, como <span>freelancer na LeadMedia</span>, lidando com
+                projetos que envolvem inteligência artificial. Até agora, já
+                desenvolvi em JavaScript, React, React Native, Three.js, C++,
+                Node.js e Java, além de trabalhar com bancos de dados como
+                PostgreSQL, MySQL, Qdrant e Pinecone e a cada dia, estou
+                aprendendo mais!
               </p>
             ) : (
               <p>
                 Hello, my name is Alexsander. I'm 23 years old, nerd, an avid
                 cinephile and lover of good music. I currently work at{" "}
-                <span>Radar Saúde as an intern </span>
-                in Systems Development and also as{" "}
-                <span>freelancer at LeadMedia</span>, working on projects
-                involving artificial intelligence. So far, I have developed in
-                JavaScript, React, React Native, Three.js, C++, Node.js, and
-                Java, as well as worked with databases like PostgreSQL, MySQL,
-                Qdrant, and Pinecone, and learning more every day!
+                <span>Radar Saúde as Junior Developer </span>
+                and also as <span>freelancer at LeadMedia</span>, working on
+                projects involving artificial intelligence. So far, I have
+                developed in JavaScript, React, React Native, Three.js, C++,
+                Node.js, and Java, as well as worked with databases like
+                PostgreSQL, MySQL, Qdrant, and Pinecone, and learning more every
+                day!
               </p>
             )}
           </div>

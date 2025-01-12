@@ -133,15 +133,15 @@ function Experience() {
         <FaGitAlt />,
       ],
       descricao:
-        "Como estágiario, estou desenvolvendo aplicações em TypeScript e Java, utilizando o banco de dados PostgreSQL, além de criar relatórios e propor melhorias nas práticas de desenvolvimento de sistemas.",
+        "Começando como estágiario por 3 meses, hoje estou como Desenvolvedor Junior desenvolvendo aplicações em JavaScript, React, TypeScript e Java, utilizando o banco de dados PostgreSQL e o Git Flow como ferramenta de desenvolvimento de projeto, além de criar relatórios e propor melhorias nas práticas de desenvolvimento de sistemas.",
       title: "Radar Saúde",
-      subtitle: "Estágio em Desenvolvimento de Sistema",
+      subtitle: "Desenvolvedor Junior",
       tag: "tag tag-job",
       tag_type: "Trabalho",
       descricaoEnglish:
-        "As an intern, I am developing applications in TypeScript and Java, utilizing PostgreSQL as the database, while also creating reports and proposing improvements to development practices.",
+        "Starting as an intern for 3 months, now I am as Junior developing applications in JavaScript, React, TypeScript and Java, utilizing PostgreSQL as the database and Git Flow as project management tool, while also creating reports and proposing improvements to development practices.",
       titleEnglish: "Radar Saude",
-      subtitleEnglish: "Internship in Systems Development",
+      subtitleEnglish: "Junior Developer",
       tag_typeEnglish: "Work",
     },
   ];
