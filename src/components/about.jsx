@@ -22,24 +22,24 @@ function About() {
           <div className="bio1">
             {!autoTranslation ? (
               <p>
-                Olá, meu nome é Alexsander, tenho 23 anos. Sou nerd e amante de
+                Olá, meu nome é Alexsander, tenho 24 anos. Sou nerd e amante de
                 cinema e música boa. Atualmente, estou trabalhando na{" "}
-                <span>Radar Saúde como Desenvolvedor Junior</span> e, ao mesmo
-                tempo, como <span>freelancer na LeadMedia</span>, lidando com
+                <span>Radar Saúde como Desenvolvedor Junior</span> e, até recentemente,
+                como <span>freelancer na LeadMedia</span>, lidando com
                 projetos que envolvem inteligência artificial. Até agora, já
-                desenvolvi em JavaScript, React, React Native, Three.js, C++,
+                desenvolvi em JavaScript, React, TypeScript, React Native, Three.js, C++,
                 Node.js e Java, além de trabalhar com bancos de dados como
                 PostgreSQL, MySQL, Qdrant e Pinecone e a cada dia, estou
                 aprendendo mais!
               </p>
             ) : (
               <p>
-                Hello, my name is Alexsander. I'm 23 years old, nerd, an avid
+                Hello, my name is Alexsander. I'm 24 years old, nerd, an avid
                 cinephile and lover of good music. I currently work at{" "}
                 <span>Radar Saúde as Junior Developer </span>
-                and also as <span>freelancer at LeadMedia</span>, working on
+                , and until recently, as <span>freelancer at LeadMedia</span>, working on
                 projects involving artificial intelligence. So far, I have
-                developed in JavaScript, React, React Native, Three.js, C++,
+                developed in JavaScript, React, TypeScript, React Native, Three.js, C++,
                 Node.js, and Java, as well as worked with databases like
                 PostgreSQL, MySQL, Qdrant, and Pinecone, and learning more every
                 day!
@@ -51,7 +51,7 @@ function About() {
               <p>
                 Além de trabalhar, eu também divido meu tempo com a{" "}
                 <span>graduação</span> em Análise e Desenvolvimento de Sistemas
-                na Estácio, onde estou no 2° semestre. Já concluí o{" "}
+                na Estácio, onde estou no 4° semestre. Já concluí o{" "}
                 <span>curso Técnico</span> em Desenvolvimento de Sistemas no
                 Senai São José e, a cada dia, estou lutando mais para me
                 desenvolver profissionalmente e como pessoa. Busco
@@ -61,7 +61,7 @@ function About() {
               <p>
                 In addition to working, I also dedicate my time to my studies,
                 pursuing a <span>degree</span> in Systems Analysis and
-                Development at Estácio, where I'm in my 2nd semester. I have
+                Development at Estácio, where I'm in my 4th semester. I have
                 already completed a <span>technical course</span> in Systems
                 Development at Senai São José, and every day I'm striving to
                 develop myself both professionally and personally. I constantly

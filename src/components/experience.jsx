@@ -94,6 +94,7 @@ function Experience() {
       data: [<FaRegCalendarAlt />, " Setembro de 2024 - Agosto de 2025"],
       dataEnglish: [<FaRegCalendarAlt />, " September 2024 - August 2025"],
       competencias: [
+        <SiTypescript />,
         <GiArtificialIntelligence />,
         <FaReact />,
         <IoLogoJavascript />,
