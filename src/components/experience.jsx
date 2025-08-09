@@ -91,8 +91,8 @@ function Experience() {
     {
       id: 3,
       imagem: leadMedia,
-      data: [<FaRegCalendarAlt />, " Setembro de 2024 - Presente"],
-      dataEnglish: [<FaRegCalendarAlt />, " September 2024 - Present"],
+      data: [<FaRegCalendarAlt />, " Setembro de 2024 - Agosto de 2025"],
+      dataEnglish: [<FaRegCalendarAlt />, " September 2024 - August 2025"],
       competencias: [
         <GiArtificialIntelligence />,
         <FaReact />,
@@ -103,13 +103,13 @@ function Experience() {
         <BiLogoPostgresql />,
       ],
       descricao:
-        "Como Freelancer, atuo no desenvolvimento de chatbots com Inteligência Artificial, incluindo LLMs, para a LeadMedia Group, com o objetivo de otimizar a venda de produtos de diversas empresas, indo desde o uso de plataformas como Flowise e Flowbuilder até a implementação completa de páginas web, envolvendo tanto front-end quanto back-end.",
+        "Como Freelancer, atuei no desenvolvimento de chatbots com Inteligência Artificial, incluindo LLMs, para a LeadMedia Group, com o objetivo de otimizar a venda de produtos de diversas empresas, indo desde o uso de plataformas como Flowise e Flowbuilder até a implementação completa de páginas web, envolvendo tanto front-end quanto back-end.",
       title: "LeadMedia Group",
       subtitle: "Freelancer Como Desenvolvedor Full Stack",
       tag: "tag tag-job",
       tag_type: "Trabalho",
       descricaoEnglish:
-        "As a Freelancer, I contribute to the development of AI-powered chatbots, including LLMs, for LeadMedia Group, aimed at optimizing the sales of various companies' products, spanning from utilizing platforms like Flowise and Flowbuilder to the full implementation of web pages, covering both front-end and back-end development. ",
+        "As a Freelancer, I contributed to the development of AI-powered chatbots, including LLMs, for LeadMedia Group, aimed at optimizing the sales of various companies' products, spanning from utilizing platforms like Flowise and Flowbuilder to the full implementation of web pages, covering both front-end and back-end development. ",
       titleEnglish: "LeadMedia Group",
       subtitleEnglish: "Freelancer As a Full Stack Developer",
       tag_typeEnglish: "Work",
