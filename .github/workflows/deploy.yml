@@ -48,7 +48,7 @@ jobs:
       - name: Redeploy stack via Portainer API
         run: |
           PAYLOAD=$(jq -n --rawfile content stack.yml '{stackFileContent: $content, env: [], prune: false, pullImage: true}')
-          curl -fsS -X PUT \
+          curl -fsSk -X PUT \
             "${{ secrets.PORTAINER_URL }}/api/stacks/${{ secrets.PORTAINER_STACK_ID }}?endpointId=${{ secrets.PORTAINER_ENDPOINT_ID }}" \
             -H "X-API-Key: ${{ secrets.PORTAINER_API_KEY }}" \
             -H "Content-Type: application/json" \
