@@ -14,6 +14,7 @@ import {
   FaRegCalendarAlt,
   FaGitAlt,
   FaRegCalendarCheck,
+  FaDocker,
 } from "react-icons/fa";
 import { SiPhp, SiSpring } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -63,13 +64,14 @@ function Experience() {
     {
       id: 2,
       imagem: estacio,
-      data: [<FaRegCalendarAlt />, " Fevereiro de 2024 - Agosto de 2026"],
-      dataEnglish: [<FaRegCalendarAlt />, " February 2024 - August 2026"],
+      data: [<FaRegCalendarCheck />, " Fevereiro de 2024 - Agosto de 2026"],
+      dataEnglish: [<FaRegCalendarCheck />, " February 2024 - August 2026"],
       competencias: [
         <SiPhp />,
         <FaPython />,
         <BiLogoSpringBoot />,
         <FaJava />,
+        <FaDocker />,
         <SiMysql />,
         <IoLogoJavascript />,
         <FaHtml5 />,
@@ -91,8 +93,8 @@ function Experience() {
     {
       id: 3,
       imagem: leadMedia,
-      data: [<FaRegCalendarAlt />, " Setembro de 2024 - Agosto de 2025"],
-      dataEnglish: [<FaRegCalendarAlt />, " September 2024 - August 2025"],
+      data: [<FaRegCalendarCheck />, " Setembro de 2024 - Agosto de 2025"],
+      dataEnglish: [<FaRegCalendarCheck />, " September 2024 - August 2025"],
       competencias: [
         <SiTypescript />,
         <GiArtificialIntelligence />,
@@ -129,6 +131,7 @@ function Experience() {
         <SiTailwindcss />,
         <BiLogoSpringBoot />,
         <FaJava />,
+        <FaDocker />,
         <FaNodeJs />,
         <BiLogoPostgresql />,
         <FaGitAlt />,
