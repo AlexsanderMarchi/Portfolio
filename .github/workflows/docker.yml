@@ -1,10 +1,11 @@
 name: Build & push image
 
+# Só dispara depois que o workflow "CI" terminar, garantindo que o build/testes
+# já passaram antes de gerar a imagem
 on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
 
 env:
   REGISTRY: ghcr.io
@@ -12,33 +13,17 @@ env:
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion == 'success'
     permissions:
       contents: read
       packages: write
 
     steps:
-      # Baixa o código do repositório para o runner
+      # Baixa exatamente o commit que passou no CI
       - name: Checkout
         uses: actions/checkout@v4
-
-      # Instala o Node.js na mesma versão usada no estágio de build do Dockerfile (só roda em PR, como validação)
-      - name: Setup Node.js
-        if: github.event_name == 'pull_request'
-        uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
-
-      # Instala as dependências com base no package-lock.json (só roda em PR)
-      - name: Install dependencies
-        if: github.event_name == 'pull_request'
-        run: npm ci
-
-      # Builda a aplicação (vite build) para validar que o código compila (só roda em PR); no push pra master
-      # essa validação já ocorreu durante o PR, então aqui vai direto pro build+push da imagem
-      - name: Build
-        if: github.event_name == 'pull_request'
-        run: npm run build
+          ref: ${{ github.event.workflow_run.head_sha }}
 
       # Gera o nome da imagem em minúsculas (ghcr.io exige lowercase) e expõe como output
       - name: Lowercase image name
@@ -49,7 +34,7 @@ jobs:
 
       # Autentica no GitHub Container Registry (só necessário quando for realmente publicar a imagem)
       - name: Log in to GHCR
-        if: github.event_name == 'push'
+        if: github.event.workflow_run.event == 'push'
         uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
@@ -60,14 +45,15 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      # Builda a imagem Docker; só publica no GHCR quando for push na master (em PR, só valida o build)
+      # Builda a imagem Docker; só publica no GHCR quando o CI rodou por causa de um push na master
+      # (quando o CI rodou por PR, aqui só valida o build)
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
           context: .
-          push: ${{ github.event_name == 'push' }}
+          push: ${{ github.event.workflow_run.event == 'push' }}
           tags: |
             ${{ steps.image.outputs.name }}:latest
-            ${{ steps.image.outputs.name }}:${{ github.sha }}
+            ${{ steps.image.outputs.name }}:${{ github.event.workflow_run.head_sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
