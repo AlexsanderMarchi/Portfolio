@@ -19,9 +19,7 @@ jobs:
       # Envia o stack.yml atualizado para a API do Portainer, forçando o pull da imagem mais recente
       - name: Redeploy stack via Portainer API
         run: |
-          PAYLOAD=$(jq -n --rawfile content stack.yml '{stackFileContent: $content, env: [], prune: false, pullImage: true}')
           curl -fsSk -X PUT \
             "${{ secrets.PORTAINER_URL }}/api/stacks/${{ secrets.PORTAINER_STACK_ID }}?endpointId=${{ secrets.PORTAINER_ENDPOINT_ID }}" \
             -H "X-API-Key: ${{ secrets.PORTAINER_API_KEY }}" \
             -H "Content-Type: application/json" \
-            -d "$PAYLOAD"
