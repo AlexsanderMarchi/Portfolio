@@ -12,17 +12,14 @@ env:
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
-    if: github.event.workflow_run.conclusion == 'success'
     permissions:
       contents: read
       packages: write
 
     steps:
-      # Baixa exatamente o commit que passou no CI
+      # Baixa o commit que acabou de ser mergeado na master
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.workflow_run.head_sha }}
 
       # Gera o nome da imagem em minúsculas (ghcr.io exige lowercase) e expõe como output
       - name: Lowercase image name
@@ -51,6 +48,6 @@ jobs:
           push: true
           tags: |
             ${{ steps.image.outputs.name }}:latest
-            ${{ steps.image.outputs.name }}:${{ github.event.workflow_run.head_sha }}
+            ${{ steps.image.outputs.name }}:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
