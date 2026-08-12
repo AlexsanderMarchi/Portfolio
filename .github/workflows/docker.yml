@@ -45,13 +45,14 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      # Builda a imagem Docker; só publica no GHCR quando o CI rodou por causa de um push na master
-      # (quando o CI rodou por PR, aqui só valida o build)
+      # Só builda (e publica) a imagem quando o CI rodou por causa de um push na master;
+      # em PR o job roda, mas essa etapa é pulada pra não criar a imagem antes do push
       - name: Build and push image
+        if: github.event.workflow_run.event == 'push'
         uses: docker/build-push-action@v6
         with:
           context: .
-          push: ${{ github.event.workflow_run.event == 'push' }}
+          push: true
           tags: |
             ${{ steps.image.outputs.name }}:latest
             ${{ steps.image.outputs.name }}:${{ github.event.workflow_run.head_sha }}
