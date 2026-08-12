@@ -16,6 +16,12 @@ jobs:
       contents: read
 
     steps:
+      # Baixa o stack.yml do commit que gerou a imagem publicada
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+
       # Envia o stack.yml atualizado para a API do Portainer, forçando o pull da imagem mais recente
       - name: Redeploy stack via Portainer API
         run: |
