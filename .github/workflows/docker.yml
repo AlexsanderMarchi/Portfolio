@@ -1,12 +1,10 @@
 name: Build & push image
 
-# Só dispara depois que o workflow "CI" terminar na master, garantindo que o
+# Só dispara depois que for feito merge na master, garantindo que o
 # build/testes já passaram e que não é um PR antes de gerar a imagem
 on:
-  workflow_run:
-    workflows: ["CI"]
+  push:
     branches: [master]
-    types: [completed]
 
 env:
   REGISTRY: ghcr.io
