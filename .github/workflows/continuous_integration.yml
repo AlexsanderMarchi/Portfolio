@@ -19,7 +19,6 @@ jobs:
 
       # Instala o Node.js na mesma versão usada no estágio de build do Dockerfile (só roda em PR, como validação)
       - name: Setup Node.js
-        if: github.event_name == 'pull_request'
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -27,11 +26,9 @@ jobs:
 
       # Instala as dependências com base no package-lock.json (só roda em PR)
       - name: Install dependencies
-        if: github.event_name == 'pull_request'
         run: npm ci
 
       # Builda a aplicação (vite build) para validar que o código compila (só roda em PR); no push pra master
       # essa validação já ocorreu durante o PR, então aqui o job só serve de gate pro workflow de build+push da imagem
       - name: Build
-        if: github.event_name == 'pull_request'
         run: npm run build
